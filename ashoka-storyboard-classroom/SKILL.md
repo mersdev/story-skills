@@ -18,14 +18,14 @@ The listed title and beats are the full brief; no separate manuscript exists. Us
 - Use expressive, cinematic **3D family animation** with era-appropriate details. Each scene is an **individual 16:9 landscape VIDEO**, never a combined four-panel image, still image, or vertical video. A four-panel prompt instructs Flow to create four separate video scenes.
 - Give three **standalone Google Flow text prompts**, each with four locally numbered panels. Output only **one** prompt per reply; never generate or edit any image, audio, animation, or video. The student manually uses the text in Flow.
 - Only Ashoka may be a named on-screen speaking anchor. The off-screen Narrator may speak; all other historical participants appear silently unless a teacher revises this skill. Any invented line spoken by a historical figure must be clearly presented as reenactment, never a verified quotation. Prefer Narrator lines for uncertain speech.
-- Use Ashoka as the character-reference anchor, with a historically cautious likeness guided by period references when available.
+- Use a human Ashoka as the on-screen character-reference anchor. His face and clothing are cautious artistic reconstructions, not documented likenesses.
 - Keep wartime or battle scenes tense, respectful, and non-graphic. Avoid gore, torture scenes, and invented final words.
 
-## Topic mascot — edict storyteller
+## Slide mascot — edict storyteller
 
-Original identity reference: [moscott.png](/Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/moscott.png). Ready-to-use topic image: [mascot-ashoka.png](/Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/mascot-ashoka.png). These are absolute local paths so image tools can read them from any working directory. The topic image is already generated; use it for every storyboard group. It keeps the same navy faceplate and body, two violet oval eyes, white helmet rim, purple head lobes, white-and-violet central crest, violet circular chest emblem, white gloves, dark boots, and curved white tail with dark violet tip. The theme outfit and signature pose are: a cream-and-saffron shoulder drape and waist wrap open around the chest emblem, an inscribed scroll presented in one glove, and a calm open-hand gesture. Do not redraw the mascot into a different face, body, palette, eye pattern, or rendering style. Keep its crest, chest emblem, and tail visible. The mascot pose is classroom staging; do not claim the image reproduces a documented photograph. The mascot may portray Ashoka as stylized classroom cosplay, never as a verified historical portrait or eyewitness.
+Original mascot design: [moscott.png](/Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/moscott.png). Ashoka-themed slide illustration: [mascot-ashoka.png](/Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/mascot-ashoka.png). Use this illustration only on a classroom title or overview slide. It is decorative cosplay, not Ashoka's likeness or a character reference for the storyboard. Do not put the mascot in any of the twelve historical scenes or their Google Flow prompts.
 
-Include the same topic image in Stage 1 character lists and all three storyboard groups. Do not claim the image is attached to Google Flow. Historical facts and the twelve locked beats still govern each scene.
+If a slide is prepared, identify the existing mascot asset by its absolute path. Do not claim it is attached to Google Flow. Historical facts and the twelve locked beats still govern each scene.
 
 ## Student commands and stages
 
@@ -35,13 +35,13 @@ Recognize commands case-insensitively and remember the current stage within this
 |---|---|---|---|
 | 0. Welcome | Skill selected or HELP before START | One-line goal and `Type START.` | START |
 | 1. Scene plan | START | All 12 locked scenes in groups 1–4, 5–8, 9–12 | NEXT |
-| 2. Character prompts | NEXT | Ashoka context, topic mascot Prompt A, and exactly 100-word Prompt B | NEXT |
-| 3. Image checkpoint | NEXT | Show the bundled topic mascot; `NEXT` uses it, or accept an optional final upload or `SKIP IMAGE` | NEXT, upload, or SKIP IMAGE |
-| 4. Storyboard I | `NEXT` with bundled mascot, final upload, or SKIP IMAGE | One standalone text prompt, global Frames 1–4 | NEXT |
+| 2. Character prompts | NEXT | Human Ashoka context, human character Prompt A, and exactly 100-word Prompt B | NEXT |
+| 3. Image checkpoint | NEXT | Accept an optional human Ashoka reference; otherwise use a labelled text-only reconstruction | NEXT, upload, or SKIP IMAGE |
+| 4. Storyboard I | NEXT after the image checkpoint | One standalone text prompt, global Frames 1–4 | NEXT |
 | 5. Storyboard II | NEXT | One standalone text prompt, global Frames 5–8 | NEXT |
 | 6. Storyboard III | NEXT | One standalone text prompt, global Frames 9–12 | Finish |
 
-At Stage 3, the generated topic image at the absolute path above is already approved. `NEXT` advances to Stage 4 using it. An optional uploaded alternate must be inspected against the original mascot before use. `SKIP IMAGE` advances with a labelled text-only fallback. Historical photos are context, not mascot references; never invent an attachment.
+At Stage 3, `NEXT` advances to Stage 4 using an approved uploaded human reference if one exists, or a labelled text-only human Ashoka reconstruction. `SKIP IMAGE` uses the text-only reconstruction. Inspect an optional human reference read-only for historical plausibility; it must not be the mascot. Historical photos are context, not proof of Ashoka's appearance; never invent an attachment.
 
 ## Locked 12-scene story
 
@@ -78,19 +78,19 @@ Say: `Welcome to Ashoka: From Kalinga to Dhamma! We will plan 12 scenes, one cha
 
 ## Stage 1 — Review all twelve scenes
 
-Show all twelve locked frames in three labelled groups. For **each** frame include `Frame N — [beat title]`, `Historical fact:`, `Action:`, `Shot:`, `Characters:`, `Dialogue:`, `Environment:`, and `Continuity:`. Make one filmable moment, one separate 16:9 video shot, a six/seven-word Malay Narrator or permitted reenactment line (or silence), period-appropriate physical anchors, and a link to adjacent scenes. Keep each scene short, roughly 6–10 seconds as a production guide. Build an internal world bible for repeated places: layout, entrances, landmarks, prop positions, materials, light, time, and weather. End: `Type NEXT for the topic mascot character prompts.`
+Show all twelve locked frames in three labelled groups. For **each** frame include `Frame N — [beat title]`, `Historical fact:`, `Action:`, `Shot:`, `Characters:`, `Dialogue:`, `Environment:`, and `Continuity:`. Make one filmable moment, one separate 16:9 video shot, a six/seven-word Malay Narrator or permitted reenactment line (or silence), period-appropriate physical anchors, and a link to adjacent scenes. Keep each scene short, roughly 6–10 seconds as a production guide. Build an internal world bible for repeated places: layout, entrances, landmarks, prop positions, materials, light, time, and weather. List human Ashoka and other historical people in `Characters:` where relevant; never list the mascot. The mascot asset may decorate a separate classroom overview slide. End: `Type NEXT for Ashoka's human character prompts.`
 
 ## Stage 2 — Character prompts, text only
 
-1. `CHARACTER INFORMATION:` briefly explain Ashoka's historical role and relevant frames. Show the ready topic mascot at `/Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/mascot-ashoka.png` and explain that it is a fictional edict storyteller, not a documented likeness.
-2. `PROMPT A — CHARACTER REFERENCE IMAGE:` one independently copyable fenced `text` block for an optional alternate image. Use `/Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/moscott.png` as the edit target and `/Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/mascot-ashoka.png` as the approved theme example. Preserve the same navy faceplate and body, two violet oval eyes, white helmet rim, purple head lobes, white-and-violet central crest, violet circular chest emblem, white gloves, dark boots, and curved white tail with dark violet tip, the original shape pattern, proportions, linework, and colors. Add a cream-and-saffron shoulder drape and waist wrap open around the chest emblem, an inscribed scroll presented in one glove, and a calm open-hand gesture. Exactly one full-body mascot, transparent background, no human face, extra characters, location, words, or watermark. Do not call an image generator within this skill.
-3. `PROMPT B — ACTING & SPEAKING:` one separate fenced `text` block of **exactly 100 space-separated words in one paragraph**. Describe the same mascot acting as a edict storyteller. If the mascot voices Ashoka, mark all unsourced lines as reenactment and do not imply an authentic recorded voice or quotation.
+1. `CHARACTER INFORMATION:` briefly explain the human Ashoka's historical role and relevant frames. Do not present his exact face, voice, or wardrobe as documented fact. The mascot is only for a separate classroom slide.
+2. `PROMPT A — CHARACTER REFERENCE IMAGE:` one independently copyable fenced `text` block for an optional human Ashoka reference. Describe one adult South Asian human ruler in a historically cautious Mauryan-inspired costume, with consistent face, hair, build, and clothing across the twelve scenes. Present the design as artistic reconstruction, not a documented likeness. Full body, simple background, no mascot, robot features, extra characters, location, words, or watermark. Do not call an image generator within this skill.
+3. `PROMPT B — ACTING & SPEAKING:` one separate fenced `text` block of **exactly 100 space-separated words in one paragraph**. Describe the human Ashoka acting as a ruler across the campaign and later public edicts. Mark any unsourced speech as reenactment and do not imply an authentic recorded voice or quotation. Prefer Narrator lines.
 
-End: `Your topic mascot image is ready. Type NEXT to use it, or use Prompt A to make an alternate.`
+End: `Type NEXT for the human character reference checkpoint, or use Prompt A to make an optional human Ashoka image.`
 
 ## Stage 3 — Reference checkpoint
 
-Identify the ready topic image at `/Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/mascot-ashoka.png`. On `NEXT`, use this approved image and immediately generate Storyboard I. An optional final alternate upload may replace it only after read-only inspection confirms the original mascot's face, eye pattern, crest, chest emblem, proportions, palette, and tail. On `SKIP IMAGE`, use a labelled text-only fallback based on `/Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/moscott.png`. Do not create media or claim an external attachment.
+Explain that a human Ashoka image is optional. On `NEXT`, use an approved uploaded human reference if one exists; otherwise use a labelled text-only human reconstruction. `SKIP IMAGE` uses the text-only reconstruction. Immediately generate Storyboard I. Inspect any uploaded human reference read-only for consistency and historical plausibility, then use it for Ashoka alone. Never substitute the slide mascot or claim an external attachment. Do not create media.
 
 ## Stages 4–6 — Google Flow text prompts
 
@@ -118,11 +118,11 @@ Description: [one individual 16:9 landscape VIDEO scene]
 STYLE CONSISTENCY:
 VISUAL STYLE & VIDEO: Cinematic 3D family animation; four separate 16:9 landscape videos, never a grid or still; era-appropriate palette, materials, and camera treatment.
 ENVIRONMENT LOCK: [Self-contained layout, landmarks, materials, light, weather, time and prop positions for every location in this group; repeat details rather than saying "same as before".]
-CHARACTER REFERENCE LOCK: [Use approved topic mascot image /Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/mascot-ashoka.png; original identity reference /Users/baoren/playground/story-skills/ashoka-storyboard-classroom/assets/moscott.png. Preserve the same navy faceplate and body, two violet oval eyes, white helmet rim, purple head lobes, white-and-violet central crest, violet circular chest emblem, white gloves, dark boots, and curved white tail with dark violet tip, original shape pattern, proportions, palette, and rendering style. Theme outfit and pose: a cream-and-saffron shoulder drape and waist wrap open around the chest emblem, an inscribed scroll presented in one glove, and a calm open-hand gesture. Ashoka is portrayed by fictional mascot cosplay, not a verified likeness. If student chose SKIP IMAGE, label a text-only fallback instead. Keep other participants historically appropriate.]
+CHARACTER REFERENCE LOCK: [Ashoka is a human Mauryan ruler. Use the student's inspected human reference if provided; otherwise label a text-only artistic reconstruction. Describe his consistent adult human face, hair, build, and Mauryan-inspired clothing in self-contained terms, without claiming a documented likeness. Keep other human participants historically appropriate. The classroom slide mascot never appears in these videos.]
 ```
 
 After Group I say `Type NEXT for Storyboard 2 (Frames 5–8).` After Group II say `Type NEXT for Storyboard 3 (Frames 9–12).` After Group III say `Well done! Your three storyboard prompts for Ashoka: From Kalinga to Dhamma are complete.` Do not issue two groups together even if asked to finish everything in one response. Keep the style block self-contained for each group and all dialogue at six or seven spoken Malay words. Output copy-ready Markdown text only.
 
 ## Self-check before every reply
 
-Check that the bundled mascot identity survives its topic costume; the fixed title and ordered beats; one-stage advancement; correct four global frames and four local panels; standalone scene and environment/character locks; honest historical sourcing; six/seven-word spoken Malay lines; exactly 100 words in Prompt B; correct image checkpoint and fallback; no claimed Flow attachments; no generated media; and all topic-specific safeguards above.
+Check that Ashoka is human in every historical scene and the mascot stays on a separate slide; the fixed title and ordered beats; one-stage advancement; correct four global frames and four local panels; standalone scene and environment/character locks; honest historical sourcing; six/seven-word spoken Malay lines; exactly 100 words in Prompt B; correct image checkpoint and fallback; no claimed Flow attachments; no generated media; and all topic-specific safeguards above.
