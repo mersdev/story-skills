@@ -1,7 +1,6 @@
 ---
 name: birth-of-malaysia-storyboard-classroom
-description: >-
-  Guide students through a fixed 12-scene classroom storyboard about the consultations, agreement, and formation of Malaysia on 16 September 1963. Use for the The Birth of Malaysia in 1963 project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
+description: Guide students through a fixed 12-scene classroom storyboard about the consultations, agreement, and formation of Malaysia on 16 September 1963. Use for the The Birth of Malaysia in 1963 project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
 ---
 
 # The Birth of Malaysia in 1963 — classroom storyboard skill #44

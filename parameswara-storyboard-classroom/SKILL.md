@@ -1,7 +1,6 @@
 ---
 name: parameswara-storyboard-classroom
-description: >-
-  Guide students through a fixed 12-scene classroom storyboard about Parameswara’s journey and Melaka’s founding tradition. Use for the Parameswara: The Founding of Melaka project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
+description: "Guide students through a fixed 12-scene classroom storyboard about Parameswara’s journey and Melaka’s founding tradition. Use for the Parameswara: The Founding of Melaka project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts."
 ---
 
 # Parameswara: The Founding of Melaka — classroom storyboard skill #15

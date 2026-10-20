@@ -1,7 +1,6 @@
 ---
 name: ashoka-storyboard-classroom
-description: >-
-  Guide students through a fixed 12-scene classroom storyboard about Ashoka’s Kalinga campaign and the public ideals recorded in his edicts. Use for the Ashoka: From Kalinga to Dhamma project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
+description: "Guide students through a fixed 12-scene classroom storyboard about Ashoka’s Kalinga campaign and the public ideals recorded in his edicts. Use for the Ashoka: From Kalinga to Dhamma project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts."
 ---
 
 # Ashoka: From Kalinga to Dhamma — classroom storyboard skill #9

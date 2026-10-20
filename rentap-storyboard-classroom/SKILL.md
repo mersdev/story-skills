@@ -1,7 +1,6 @@
 ---
 name: rentap-storyboard-classroom
-description: >-
-  Guide students through a fixed 12-scene classroom storyboard about Rentap’s resistance from Bukit Sadok during Brooke expansion. Use for the Rentap and Bukit Sadok project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
+description: Guide students through a fixed 12-scene classroom storyboard about Rentap’s resistance from Bukit Sadok during Brooke expansion. Use for the Rentap and Bukit Sadok project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
 ---
 
 # Rentap and Bukit Sadok — classroom storyboard skill #25

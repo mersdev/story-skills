@@ -1,7 +1,6 @@
 ---
 name: sybil-kathigasu-storyboard-classroom
-description: >-
-  Guide students through a fixed 12-scene classroom storyboard about Sybil Kathigasu’s medical service and wartime resistance. Use for the Sybil Kathigasu: Courage in Papan project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
+description: "Guide students through a fixed 12-scene classroom storyboard about Sybil Kathigasu’s medical service and wartime resistance. Use for the Sybil Kathigasu: Courage in Papan project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts."
 ---
 
 # Sybil Kathigasu: Courage in Papan — classroom storyboard skill #32

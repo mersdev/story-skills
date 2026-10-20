@@ -1,7 +1,6 @@
 ---
 name: perak-man-storyboard-classroom
-description: >-
-  Guide students through a fixed 12-scene classroom storyboard about the discovery, study, and preservation of Perak Man. Use for the Perak Man: The Lenggong Discovery project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
+description: "Guide students through a fixed 12-scene classroom storyboard about the discovery, study, and preservation of Perak Man. Use for the Perak Man: The Lenggong Discovery project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts."
 ---
 
 # Perak Man: The Lenggong Discovery — classroom storyboard skill #2

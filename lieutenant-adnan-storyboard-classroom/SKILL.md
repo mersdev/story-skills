@@ -1,7 +1,6 @@
 ---
 name: lieutenant-adnan-storyboard-classroom
-description: >-
-  Guide students through a fixed 12-scene classroom storyboard about the Malay Regiment’s defence at Pasir Panjang and Bukit Chandu. Use for the Lieutenant Adnan and the Stand at Bukit Chandu project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
+description: Guide students through a fixed 12-scene classroom storyboard about the Malay Regiment’s defence at Pasir Panjang and Bukit Chandu. Use for the Lieutenant Adnan and the Stand at Bukit Chandu project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
 ---
 
 # Lieutenant Adnan and the Stand at Bukit Chandu — classroom storyboard skill #31

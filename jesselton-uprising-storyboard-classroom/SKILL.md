@@ -1,7 +1,6 @@
 ---
 name: jesselton-uprising-storyboard-classroom
-description: >-
-  Guide students through a fixed 12-scene classroom storyboard about the 1943 uprising against Japanese occupation in North Borneo and its aftermath. Use for the The Jesselton Uprising project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
+description: Guide students through a fixed 12-scene classroom storyboard about the 1943 uprising against Japanese occupation in North Borneo and its aftermath. Use for the The Jesselton Uprising project with START, NEXT, RETRY, HELP, and SKIP IMAGE; produce text-only 16:9 Google Flow prompts.
 ---
 
 # The Jesselton Uprising — classroom storyboard skill #33
