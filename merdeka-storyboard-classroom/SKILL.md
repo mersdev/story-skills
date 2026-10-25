@@ -167,13 +167,15 @@ Ask whether the student wants to modify either prompt or any character design tr
 
 ## Step 2.5 — Character image upload and identity lock
 
-Request one final clean-background image for Tunku Abdul Rahman or an explicit `SKIP IMAGE`. Never generate media. If the final image was already supplied, reuse it; do not demand another upload. Inspect any uploaded image read-only and describe only visible face, hair, build, clothing, colors, accessories, and style. Resolve differences between the image and Prompt A with the student. If `SKIP IMAGE` is chosen, use the approved Prompt A as the text-only reference. Show a short character reference lock summary naming the approved image if one exists, or the text-only fallback, plus the exact appearance invariants. Ask for explicit approval of this lock. Do not claim a nonexistent filename or Flow attachment. Only after lock approval deliver Storyboard I.
+Request one final clean-background image for Tunku Abdul Rahman or an explicit `SKIP IMAGE`. Never generate media. If the final image was already supplied, reuse it; do not demand another upload. Inspect any uploaded image read-only and describe only visible face, hair, build, clothing, colors, accessories, and style. Resolve differences between the image and Prompt A with the student. If `SKIP IMAGE` is chosen, use the approved Prompt A as the text-only reference. Show a short character reference lock summary identifying the approved image by character name if one exists, or the text-only fallback, plus the exact appearance invariants. Ask for explicit approval of this lock. Do not claim a nonexistent filename or Flow attachment. Only after lock approval deliver Storyboard I.
 
 ## Stages 3–5 — Three Google Flow storyboard prompts
 
 Generate only the current **one** four-panel storyboard per reply. Always deliver the entire story prompt within **one Markdown `text` code fence**. The **first line inside** must be exactly:
 
 `Create a storyboard based on the panels below:`
+
+In the copy-ready storyboard, identify an approved uploaded image only by the character name, `Tunku Abdul Rahman's approved character reference`. Never include an upload filename (such as `image_161d23.jpg`), extension, path, or asset ID anywhere in the prompt. The student supplies the image separately to Gemini/Flow.
 
 Use this exact architecture (replace placeholders with the correct four locked global frame beats):
 
@@ -200,7 +202,7 @@ STYLE CONSISTENCY:
 VISUAL STYLE & VIDEO: [Cinematic 3D Disney/Pixar-style family-animation aesthetic, historically faithful reconstructed Malaya/London; every panel is an INDIVIDUAL 16:9 landscape VIDEO, not a combined grid/image; matching palettes and camera treatment.]
 ENVIRONMENT LOCK: [Detailed self-contained references for every location used in this particular group: physical layout, fixed anchors, architecture, lighting, era, weather, object placement; consistent with prior approved plans. Do not write "same as before" without details.]
 CHARACTER REFERENCE LOCK:
-[Use the final approved Tunku Abdul Rahman image if supplied, or approved Prompt A as the explicit text-only fallback. Restate his approved eye color, brows, face, hair, headwear, garment colors and textures, accessories, and style; do not invent details hidden in an uploaded image. Keep him visibly identical across all groups; never invent an image reference.]
+[Use Tunku Abdul Rahman's approved character reference if supplied, or approved Prompt A as the explicit text-only fallback. Refer to the image by character name, never by filename. Restate his approved eye color, brows, face, hair, headwear, garment colors and textures, accessories, and style; do not invent details hidden in an uploaded image. Keep him visibly identical across all groups; never invent an image reference.]
 GOOGLE FLOW USAGE: [The student copies this text into Flow and manually attaches the approved character image if available. Do not claim it is already attached.]
 ```
 

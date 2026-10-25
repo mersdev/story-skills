@@ -107,11 +107,13 @@ Ask whether the student wants to modify either prompt or any character design tr
 
 ## Step 2.5 — Character image upload and identity lock
 
-Request one final clean-background image for Parameswara or an explicit `SKIP IMAGE`. Never generate media. If the final image was already supplied, reuse it; do not demand another upload. Inspect any uploaded image read-only and describe only visible face, hair, build, clothing, colors, accessories, and style. Resolve differences between the image and Prompt A with the student. If `SKIP IMAGE` is chosen, use the approved Prompt A as the text-only reference. Show a short character reference lock summary naming the approved image if one exists, or the text-only fallback, plus the exact appearance invariants. Ask for explicit approval of this lock. Do not claim a nonexistent filename or Flow attachment. Only after lock approval deliver Storyboard I.
+Request one final clean-background image for Parameswara or an explicit `SKIP IMAGE`. Never generate media. If the final image was already supplied, reuse it; do not demand another upload. Inspect any uploaded image read-only and describe only visible face, hair, build, clothing, colors, accessories, and style. Resolve differences between the image and Prompt A with the student. If `SKIP IMAGE` is chosen, use the approved Prompt A as the text-only reference. Show a short character reference lock summary identifying the approved image by character name if one exists, or the text-only fallback, plus the exact appearance invariants. Ask for explicit approval of this lock. Do not claim a nonexistent filename or Flow attachment. Only after lock approval deliver Storyboard I.
 
 ## Stages 3–5 — Google Flow text prompts
 
 Produce exactly one current group per reply, in a single Markdown `text` fence. Its first line must be exactly `Create a storyboard based on the panels below:`. Use **local** Panel 1–4 labels even for later groups. Each panel corresponds to one locked global frame. Include no extra panel or story beat. The four descriptions must stand independently as separate **16:9 landscape VIDEO** scenes, with action, period setting, lighting, camera, and continuity. Refer to people by name and action in descriptions; put physical appearance and wardrobe in the character lock. Choose Parameswara or Narrator for each finished Dialogue field; never leave a placeholder. Show Parameswara in at least one panel per four-panel group and give him at least one spoken line in the story.
+
+In the copy-ready storyboard, identify an approved uploaded image only by the character name, `Parameswara's approved character reference`. Never include an upload filename (such as `image_161d23.jpg`), extension, path, or asset ID anywhere in the prompt. The student supplies the image separately to Gemini/Flow.
 
 ```text
 Create a storyboard based on the panels below:
@@ -136,7 +138,7 @@ STYLE CONSISTENCY:
 VISUAL STYLE & VIDEO: Cinematic 3D Disney/Pixar-style family animation; four separate 16:9 landscape videos, never a grid or still; era-appropriate palette, materials, and camera treatment.
 ENVIRONMENT LOCK: [Self-contained layout, landmarks, materials, light, weather, time and prop positions for every location in this group; repeat details rather than saying "same as before".]
 CHARACTER REFERENCE LOCK:
-[Use the final approved Parameswara image if supplied, or approved Prompt A as the explicit text-only fallback. Restate his approved eye color, brows, face, hair, headwear, garment colors and textures, accessories, and style; do not invent details hidden in an uploaded image. Keep him visibly identical across all groups; never invent an image reference.]
+[Use Parameswara's approved character reference if supplied, or approved Prompt A as the explicit text-only fallback. Refer to the image by character name, never by filename. Restate his approved eye color, brows, face, hair, headwear, garment colors and textures, accessories, and style; do not invent details hidden in an uploaded image. Keep him visibly identical across all groups; never invent an image reference.]
 GOOGLE FLOW USAGE: [The student copies this text into Flow and manually attaches the approved character image if available. Do not claim it is already attached.]
 ```
 
