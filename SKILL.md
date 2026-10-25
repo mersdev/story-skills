@@ -11,7 +11,7 @@ The generated `SKILL.md` must work on its own. Include its complete topic, twelv
 
 ## Build the topic-specific skill
 
-1. Use the teacher's story, audience, language, style, and cast when provided. For missing preferences, default to Malaysian primary and lower-secondary students, simple English instructions, Bahasa Melayu speech, and cinematic 3D family animation. Ask only when the story or its factual scope cannot be inferred.
+1. Use the teacher's story, audience, style, and cast when provided. Default to Malaysian primary and lower-secondary students, English for all non-dialogue text, and cinematic 3D family animation. At the first student step, ask whether **Dialogue** should be in English or Bahasa Melayu; do not choose for the student.
 2. Research historical claims with authoritative sources. Put direct source links and the facts they support **inside the generated skill**. Choose exactly twelve chronological, filmable beats. Keep legends, disputed details, and artistic reconstructions distinct from documented history. Include topic-specific visual safeguards such as period flags, buildings, clothing, and chronology. Do not invent precise dialogue, appearance, interiors, dates, or source-backed claims.
 3. Choose only the named main speaking characters the story needs; one historical lead plus an off-screen Narrator is the default in this repository. Every designed main character must speak in the plan. The Narrator needs no character image prompt; silent participants and crowds need no profile. Give each main speaker a fixed written design, while marking unsupported traits as reconstruction.
 4. Write a unique lowercase hyphenated frontmatter `name` matching the skill folder and a description that names the fixed story and output. Make the lesson topic-locked: students may revise pacing, framing, or tone, but cannot switch its event or silently replace its twelve beats.
@@ -24,22 +24,22 @@ The generated `SKILL.md` must work on its own. Include its complete topic, twelv
 - The assistant writes prompts and may inspect user-uploaded images read-only. It never generates, edits, renders, previews, uploads, delegates, or sends image, audio, animation, or video media. `Create a storyboard based on the panels below:` is text for the student to copy, not an instruction for the assistant to execute.
 - Plan **twelve** chronological frames, grouped 1–4, 5–8, and 9–12. Each frame is an **individual 16:9 landscape video** scene; a four-panel prompt does not request a combined grid, still image, or vertical video.
 - Deliver **three standalone four-panel prompts**, one per assistant reply. Use local `Panel 1`–`Panel 4` labels in every prompt and keep each prompt usable without the preceding ones.
-- Every non-silent spoken Malay dialogue or narration line has **six or seven space-separated words**. Count spoken words, excluding the speaker label. A silent panel uses `Dialogue: None (silent panel)`. Preserve authentic quotations; if their wording conflicts with the count, describe the quotation as action and use a compliant Narrator line rather than altering it.
+- Every non-silent `Dialogue:` line, including off-screen Narrator speech, uses the student's chosen **English or Bahasa Melayu** and has **six or seven space-separated words**. Count spoken words, excluding the speaker label. Keep all other text in English. A silent panel uses `Dialogue: None (silent panel)`. Preserve authentic quotations; if their wording conflicts with the count, describe the quotation as action and use a compliant Narrator line rather than altering it.
 - Attribute invented historical speech to reenactment, not to a verified quotation. Respect the user's protected dialogue and the topic's historical boundaries.
 
 ### Student stages and approval gates
 
 | Stage | Student action | Skill output |
 |---|---|---|
-| Welcome | Select skill or request `HELP` | Fixed topic and `START` instruction |
-| 1. Story plan | `START` or `NEXT` at welcome | All twelve locked frames in three groups of four; ask for approval or revisions |
+| Welcome | Select skill or request `HELP` | Fixed topic; ask whether dialogue should be English or Bahasa Melayu |
+| 1. Story plan | Choose dialogue language, or `START` after choosing | All twelve locked frames in three groups of four; ask for approval or revisions |
 | 2. Character prompts | Approve plan or `NEXT` | Profile and two separate copy-ready text prompts for each main speaker; ask for approval or revisions |
 | 2.5. Reference lock | Approve character prompts | Request final character image or `SKIP IMAGE`; inspect, reconcile, summarize, and ask for lock approval |
 | 3. Storyboard I | Approve reference lock | One prompt for global Frames 1–4 |
 | 4. Storyboard II | `NEXT` | One prompt for global Frames 5–8 |
 | 5. Storyboard III | `NEXT` | One prompt for global Frames 9–12; finish |
 
-Recognize `START`, `NEXT`, `RETRY`, `HELP`, and `SKIP IMAGE` case-insensitively. `NEXT` advances only one stage; it must not skip the reference decision or approval gate. `RETRY` revises the current stage without changing the fixed topic. `HELP` briefly gives the current stage and one next action. Ask before restarting work already in progress. After the third storyboard, `NEXT` says the project is complete.
+Recognize `START`, `NEXT`, `RETRY`, `HELP`, `SKIP IMAGE`, and the English/Malay language choice case-insensitively. Do not create the plan until the student chooses a dialogue language; if they type `START` or `NEXT` first, ask the language question and wait. Once chosen, proceed to Stage 1 without another command and remember the choice for every later `Dialogue:` field. `NEXT` otherwise advances only one stage and cannot skip the reference decision or approval gate. `RETRY` revises the current stage without changing the fixed topic. `HELP` briefly gives the current stage and one next action. Ask before restarting work already in progress. After the third storyboard, `NEXT` says the project is complete.
 
 In Stage 1, show each frame's factual anchor, filmable action, shot, speaker or cast, dialogue or silence, period environment, and continuity. Keep a consistent internal world description for repeated locations: layout, fixed landmarks and props, light, weather, era, and camera geography. The twelve approved beats remain in order throughout the three prompts.
 
@@ -66,4 +66,4 @@ Close every prompt with a self-contained `STYLE CONSISTENCY:` section containing
 
 ## Check the generated skill
 
-Before finishing, confirm its frontmatter matches its folder; the fixed topic and twelve beats have suitable sources; the student workflow includes the image-or-skip decision and lock approval; Prompt B examples contain exactly 100 words; all sample spoken lines have six or seven words; and the three storyboard groups have four local panels each. Check that the generated skill is text-only, self-contained, uses character names rather than image filenames, and does not contain facts or names accidentally copied from another story.
+Before finishing, confirm its frontmatter matches its folder; the fixed topic and twelve beats have suitable sources; the first student step asks for English or Bahasa Melayu dialogue; all non-dialogue text stays English; the student workflow includes the image-or-skip decision and lock approval; Prompt B examples contain exactly 100 words; all sample spoken lines have six or seven words in the chosen language; and the three storyboard groups have four local panels each. Check that the generated skill is text-only, self-contained, uses character names rather than image filenames, and does not contain facts or names accidentally copied from another story.

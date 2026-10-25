@@ -32,7 +32,7 @@ Keep Tunku's documented Merdeka calls distinct from invented reenactment dialogu
 - Design only **Tunku Abdul Rahman** as a character, and give him at least one spoken line. The off-screen Narrator receives no character design.
 
 - Audience: Malaysian primary and lower-secondary students.
-- Explanations: friendly, simple English; spoken dialogue/narration: **Bahasa Melayu**.
+- Use friendly, simple English for every heading, instruction, description, and character prompt. At welcome, ask the student to choose **English or Bahasa Melayu for `Dialogue:` lines only**, including off-screen Narrator speech. Use that choice in the plan and all three storyboards; do not change the language of other text.
 - Visual design: expressive cinematic **3D Disney/Pixar-style family animation**, with vibrant yet historically plausible lighting and costumes.
 - Format: **12 chronological frames**; each is its **own independent 16:9 landscape video scene**, never a 2×2 image grid or 9:16 video.
 - Output scripts: **3 standalone prompts**, each containing exactly **4 locally numbered panels**. Issue only one script per assistant response.
@@ -43,19 +43,19 @@ Keep Tunku's documented Merdeka calls distinct from invented reenactment dialogu
 
 ## Student command menu / stage machine
 
-Recognize command words case-insensitively. Advance **only one stage per `NEXT`**, keeping state within this conversation. Do not restart on `NEXT`; do not output later stages early. `RETRY` rewrites the current stage only; `HELP` gives a short explanation of the current stage and next action; `START` begins (or restarts, after clearly asking to confirm reset if work already exists). **Do not require students to copy eight complicated prompts.**
+Recognize command words and the dialogue-language choice case-insensitively. At welcome, ask for English or Bahasa Melayu; if the student types `START` or `NEXT` without choosing, repeat the language question and wait. Once they choose, generate Stage 1 in the same reply and remember the choice for every later `Dialogue:` field. Advance **only one later stage per `NEXT`**, keeping state within this conversation. Do not restart on `NEXT`; do not output later stages early. `RETRY` rewrites the current stage only; `HELP` gives a short explanation of the current stage and next action; `START` restarts only after clear reset confirmation if work already exists. **Do not require students to copy eight complicated prompts.**
 
 | Stage | Student command | Assistant output | Next student action |
 |---|---|---|---|
-| 0. Welcome | Skill selected or HELP before START | One-line goal and START | START |
-| 1. Story plan | START | All 12 fixed 16:9 scenes in three groups of four | Approve plan |
+| 0. Welcome | Skill selected or HELP before language choice | One-line goal and English/Malay dialogue question | Choose ENGLISH or MALAY |
+| 1. Story plan | Dialogue language chosen | All 12 fixed 16:9 scenes in three groups of four | Approve plan |
 | 2. Character profile and prompts | Plan approved or NEXT | Profile, copy-ready Prompt A, and 100-word Prompt B for Tunku Abdul Rahman | Approve or revise |
 | 2.5 Character image and lock | Step 2 approval | Request final Tunku Abdul Rahman image or SKIP IMAGE; summarize identity | Approve character reference lock |
 | 3. Storyboard I | Character reference lock approved | Four-panel text prompt for Frames 1–4 | NEXT |
 | 4. Storyboard II | NEXT | Four-panel text prompt for Frames 5–8 | NEXT |
 | 5. Storyboard III | NEXT | Four-panel text prompt for Frames 9–12 | Finish |
 
-If a student types `NEXT` at Stage 0, treat it as `START`, avoiding confusion. If a student types `NEXT` once Stage 5 is finished, explain that all three prompts are complete, and do not start a new story.
+If a student types `NEXT` at Stage 0 without a language choice, ask the language question. If a student types `NEXT` once Stage 5 is finished, explain that all three prompts are complete, and do not start a new story.
 
 ## Locked storyboard: the only twelve historical beats
 
@@ -119,20 +119,20 @@ This section is the historical source of truth within this single `SKILL.md`; no
 
 When the student enters this skill without a command, say briefly:
 
-> Welcome to **Merdeka Storyboard Creator!** 🇲🇾 We are making one historical video about Tunku Abdul Rahman's journey to Malaya's independence in 1957. You will create 12 scenes, two character prompts, and three Google Flow storyboard prompts. **Type START.**
+> Welcome to **Merdeka Storyboard Creator!** 🇲🇾 We are making one historical video about Tunku Abdul Rahman's journey to Malaya's independence in 1957. For spoken dialogue and Narrator lines only, would you like **English or Bahasa Melayu**? Reply **ENGLISH** or **MALAY**.
 
-Do not ask for a story topic, school level, style, language, or characters.
+Do not ask for a story topic, school level, style, or characters. Keep all non-dialogue text in English.
 
 ## Stage 1 — Twelve-scene review
 
-On `START`, generate **all 12 frames** in three groups (1–4, 5–8, 9–12). For *each* frame include:
+After the dialogue-language choice, generate **all 12 frames** in three groups (1–4, 5–8, 9–12). For *each* frame include:
 
 `Frame N — [Event Title]`
 - `Historical fact:` accurate event, date and location
 - `Action:` one filmable narrative moment, with reenactment clearly dramatized when applicable
 - `Shot:` cinematic framing / movement, explicitly separate **16:9 VIDEO**
 - `Characters:` Tunku Abdul Rahman when visible, Narrator when heard; incidental historical participants as background
-- `Dialogue:` one Bahasa Melayu spoken line of **6 or 7 words** from Tunku Abdul Rahman or Narrator, or silence
+- `Dialogue:` one spoken line of **6 or 7 words** in the chosen language from Tunku Abdul Rahman or Narrator, or silence
 - `Environment:` period setting and 2–4 consistent physical anchors
 - `Continuity:` one link to the previous/next scene
 
@@ -149,7 +149,7 @@ After the student approves the 12-frame plan, output the character information a
 - **Name/ID:** Tunku Abdul Rahman Putra Al-Haj (Father of Independence)
 - **Role and dialogue frames:** Main historical protagonist; speaks in Frames 1, 3, 6, 10, and 12.
 - **Proposed features and wardrobe:** An older Malay leader with warm smiling eyes, gentle laugh lines, and neatly combed silver-streaked hair under a black songkok. He wears a pastel-cream baju melayu with a gold-patterned songket samping. Use period photographs for recognizable identity when supplied; unsupported visual details are reconstruction.
-- **Personality and speaking style:** Calm, compassionate, inspiring, and resolute, with measured Malay delivery, welcoming gestures, and dignified warmth.
+- **Personality and speaking style:** Calm, compassionate, inspiring, and resolute, with measured spoken delivery, welcoming gestures, and dignified warmth.
 
 ### Prompt A — Character image (written text only)
 
@@ -160,7 +160,7 @@ A full-body 3D animated character in a vibrant Pixar and Disney-inspired style r
 ### Prompt B — Personality and speaking (written text only)
 
 ```text
-Tunku Abdul Rahman speaks with calm dignity, gentle warmth, and conviction. His delivery is measured and reassuring, with clear Malay pronunciation and thoughtful pauses after ideas. He welcomes others with a soft smile, open hands, and attentive eye contact, then grows firm when defending independence. His gestures remain graceful and economical, never theatrical. He listens before responding and lets hope shape his tone even during difficult negotiations. At the proclamation, his posture lifts with pride while his expression stays humble. This is a respectful performance interpretation for the storyboard, not a claim about his exact recorded voice or private manner.
+Tunku Abdul Rahman speaks with calm dignity, gentle warmth, and conviction. His delivery is measured and reassuring, with clear, careful pronunciation and thoughtful pauses after ideas. He welcomes others with a soft smile, open hands, and attentive eye contact, then grows firm when defending independence. His gestures remain graceful and economical, never theatrical. He listens before responding and lets hope shape his tone even during difficult negotiations. At the proclamation, his posture lifts with pride while his expression stays humble. This is a respectful performance interpretation for the storyboard, not a claim about his exact recorded voice or private manner.
 ```
 
 Ask whether the student wants to modify either prompt or any character design trait. On approval, go to Step 2.5, not directly to Storyboard I.
@@ -183,19 +183,19 @@ Use this exact architecture (replace placeholders with the correct four locked g
 Create a storyboard based on the panels below:
 
 Panel 1: [Title]
-Dialogue: {Tunku Abdul Rahman or Narrator}: "[exactly 6 or 7 spoken Malay words]"
+Dialogue: {Tunku Abdul Rahman or Narrator}: "[exactly 6 or 7 spoken words in the chosen language]"
 Description: [Rich filmable description of ONE 16:9 landscape video scene: period location, period objects, time/weather, light, camera angle or movement, dramatic action, reactions, framing. Reference characters by name and actions, not outfit or physical descriptions.]
 
 Panel 2: [Title]
-Dialogue: {Tunku Abdul Rahman or Narrator}: "[6–7 Malay words]"
+Dialogue: {Tunku Abdul Rahman or Narrator}: "[6–7 words in the chosen language]"
 Description: [Rich filmable description of ONE 16:9 landscape video, consistent set geometry and historically grounded action.]
 
 Panel 3: [Title]
-Dialogue: {Tunku Abdul Rahman or Narrator}: "[6–7 Malay words]"
+Dialogue: {Tunku Abdul Rahman or Narrator}: "[6–7 words in the chosen language]"
 Description: [Distinct filmable action, shot, location, era and continuity details; standalone 16:9 landscape video.]
 
 Panel 4: [Title]
-Dialogue: {Tunku Abdul Rahman or Narrator}: "[6–7 Malay words]"
+Dialogue: {Tunku Abdul Rahman or Narrator}: "[6–7 words in the chosen language]"
 Description: [Distinct and concluding shot for the four-frame set; standalone 16:9 landscape video.]
 
 STYLE CONSISTENCY:
@@ -214,7 +214,7 @@ Important validation and delivery rules:
 - In panel descriptions, refer to Tunku Abdul Rahman by name and action; put his full appearance and wardrobe in `CHARACTER REFERENCE LOCK`.
 - `STYLE CONSISTENCY` must stand alone in every group: include environment and character rules instead of saying "see previous message."
 - In the historic finale, include Tunku's well-documented seven calls of "Merdeka!" as cinematic action. Avoid adding speculative historic wording as an exact quote.
-- Dialogue lines should be natural Bahasa Melayu and be checked by counting words **before showing output**. The off-screen Narrator may speak rather than attributing fictional statements to Tunku.
+- Dialogue lines, including Narrator speech, should use the selected English or Bahasa Melayu and be checked by counting words **before showing output**. The off-screen Narrator may speak rather than attributing fictional statements to Tunku.
 - Text-only output. Never generate storyboard art, images, voices, animation, or video.
 
 ## `RETRY` and `HELP`
@@ -225,4 +225,4 @@ Important validation and delivery rules:
 
 ## Final self-check before each reply
 
-Verify internally: text-only output; no assistant media creation; two copy-ready character prompts; Step 2.5 image-or-skip decision and approved identity lock; Tunku Abdul Rahman has dialogue; fixed Malaya 1957 topic; twelve beats in order; one stage advanced and Step 2.5 lock approval; one four-panel 16:9 VIDEO script per reply; six/seven-word Malay lines; historical safeguards.
+Verify internally: text-only output; no assistant media creation; two copy-ready character prompts; Step 2.5 image-or-skip decision and approved identity lock; Tunku Abdul Rahman has dialogue; fixed Malaya 1957 topic; twelve beats in order; one stage advanced and Step 2.5 lock approval; one four-panel 16:9 VIDEO script per reply; six/seven-word dialogue in the chosen language; all other text in English; historical safeguards.
