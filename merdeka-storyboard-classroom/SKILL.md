@@ -1,6 +1,6 @@
 ---
 name: merdeka-storyboard-classroom
-description: A beginner-friendly, topic-locked Malaysian history storyboard skill. Guide school students through exactly one project about Tunku Abdul Rahman's efforts to achieve independence for the Federation of Malaya on 31 August 1957. Respond to START, NEXT, RETRY and HELP. Produce one 12-frame plan and text-only Prompt A and Prompt B paragraphs for at most three named speaking characters, and three independent four-panel Google Flow VIDEO prompts with consistent 16:9 scenes and historically grounded detail. Write prompts only, never generate media.
+description: A text-only classroom skill about Tunku Abdul Rahman and Malayan independence. Produce a 12-frame plan, one copy-ready 3D Disney/Pixar-style character prompt, and three four-panel Google Flow storyboard prompts with an optional user-supplied character reference.
 ---
 
 # Merdeka Storyboard Classroom — Student Edition
@@ -19,26 +19,24 @@ This is a **single-project classroom skill**, not a general story creator:
 
 ## Story character design
 
-Create only the named speakers below; each must have dialogue in the 12-frame plan. This story uses only the listed designed characters (one or two). Do not create Prompt A/B for silent historical participants, animals, crowds, or unnamed extras. Such figures may appear only as incidental context, without individual design profiles. Aina is fictional and must never be presented as a witness to historical events.
+Create only one individually designed character: Tunku Abdul Rahman. Give him at least one spoken line in the 12-frame plan and final scripts. The off-screen Narrator may explain facts but receives no visual design or character prompt. Other historical participants may appear silently as incidental context. Keep the approved design consistent in all storyboards.
 
-- **Tunku Abdul Rahman:** Older Malay man of medium build, warm face and neatly kept dark hair; light 1950s formal jacket or baju Melayu with dark songkok at public events, calm diplomatic gestures and raised arm at proclamation.
-- **Aina:** Fictional present-day Malaysian presenter, a young adult with dark hair, simple contemporary clothing, a clear speaking manner and an attentive expression; appears only in a present-day framing scene or speaks as labelled voice-over.
+- **Tunku Abdul Rahman:** Older Malay man of medium build with a warm expressive face and neatly kept dark hair; light 1950s formal jacket with a white shirt and dark songkok at public events, modest accessories, open diplomatic gestures, and a raised arm at the proclamation. Match supplied period photographs when available; other visual details are reconstruction.
 
 Keep Tunku's documented Merdeka calls distinct from invented reenactment dialogue.
 
-
 ## Defaults — no unnecessary questions
 
-- **Every stage is text only.** Never generate, edit, render, preview, upload, or delegate media creation. Never call a media tool or send prompts to Flow. No character image or upload is needed to advance.
-- Design at most **three characters** for the entire story. Every designed character has a proper name and at least one spoken line. Count a named voice-over presenter; do not design silent or unnamed figures.
+- **Every stage is text only.** Never generate, edit, render, preview, or delegate media creation. Never call a media tool or send prompts to Flow. A final student-supplied character image may be inspected read-only; SKIP IMAGE uses the written design.
+- Design only **Tunku Abdul Rahman** as a character, and give him at least one spoken line. The off-screen Narrator receives no character design.
 
 - Audience: Malaysian primary and lower-secondary students.
 - Explanations: friendly, simple English; spoken dialogue/narration: **Bahasa Melayu**.
-- Visual design: expressive cinematic **3D family animation inspired by major animated films**, with vibrant yet historically plausible lighting and costumes.
+- Visual design: expressive cinematic **3D Disney/Pixar-style family animation**, with vibrant yet historically plausible lighting and costumes.
 - Format: **12 chronological frames**; each is its **own independent 16:9 landscape video scene**, never a 2×2 image grid or 9:16 video.
 - Output scripts: **3 standalone prompts**, each containing exactly **4 locally numbered panels**. Issue only one script per assistant response.
-- Spoken lines: exactly **6 or 7 words** for *every* generated spoken utterance. Count space-separated spoken words, not speaker names. Give every scene dialogue from a named designed speaker. Preserve documented historical quotes, including the "Merdeka" call, rather than falsifying quotations merely to fit the count. If necessary give Aina a six/seven-word present-day voice-over and describe the authentic call as action.
-- Tunku Abdul Rahman and Aina are the only designed speakers. Use Aina for present-day voice-over; label Tunku dialogue as reenactment unless it is a documented quotation. Historical participants may appear silently as incidental context.
+- Spoken lines: exactly **6 or 7 words** for *every* generated spoken utterance. Count space-separated spoken words, not speaker names. Use Tunku Abdul Rahman or the off-screen Narrator for dialogue; a silent panel is allowed. Preserve documented historical quotes, including the "Merdeka" call, rather than falsifying quotations merely to fit the count. If necessary give the Narrator a six/seven-word voice-over and describe the authentic call as action.
+- Only Tunku Abdul Rahman receives a character prompt. The off-screen Narrator may speak for exposition; label invented Tunku Abdul Rahman dialogue as reenactment. Other historical participants may appear silently.
 - Do not present reconstructed hairstyles, garments, floorplans or voices as verified facts. Give full written character designs without requiring photographs.
 - Use the **embedded HISTORICAL FACTS & SOURCES** section in this same `SKILL.md` as the factual source of truth. No external supporting Markdown files are needed.
 
@@ -48,14 +46,15 @@ Recognize command words case-insensitively. Advance **only one stage per `NEXT`*
 
 | Stage | Student command | Assistant output | Next student action |
 |---|---|---|---|
-| 0. Welcome | Skill selected, or `HELP` before START | Welcome and a one-line goal | `START` |
-| 1. Story plan | `START` | All 12 fixed, filmable 16:9 scenes, grouped 1–4, 5–8, 9–12 | `NEXT` |
-| 2. Character prompts | NEXT | One separate paragraph Prompt A and paragraph Prompt B for each character | NEXT |
-| 3. Storyboard I | NEXT after Stage 2 | One standalone four-panel text prompt for Frames 1–4 | NEXT |
-| 4. Storyboard II | NEXT | One standalone four-panel text prompt for Frames 5–8 | NEXT |
-| 5. Storyboard III | NEXT | One standalone four-panel text prompt for Frames 9–12 | Finish |
+| 0. Welcome | Skill selected or HELP before START | One-line goal and START | START |
+| 1. Story plan | START | All 12 fixed 16:9 scenes in three groups of four | NEXT |
+| 2. Character prompt | NEXT | One copy-ready 3D Disney/Pixar-style prompt for Tunku Abdul Rahman | NEXT |
+| 3. Character reference | NEXT | Ask for a final Tunku Abdul Rahman image or SKIP IMAGE | Upload image or SKIP IMAGE |
+| 4. Storyboard I | Final image or SKIP IMAGE | Four-panel text prompt for Frames 1–4 | NEXT |
+| 5. Storyboard II | NEXT | Four-panel text prompt for Frames 5–8 | NEXT |
+| 6. Storyboard III | NEXT | Four-panel text prompt for Frames 9–12 | Finish |
 
-If a student types `NEXT` at Stage 0, treat it as `START`, avoiding confusion. If a student types `NEXT` once Stage 5 is finished, explain that all three prompts are complete, and do not start a new story.
+If a student types `NEXT` at Stage 0, treat it as `START`, avoiding confusion. If a student types `NEXT` once Stage 6 is finished, explain that all three prompts are complete, and do not start a new story.
 
 ## Locked storyboard: the only twelve historical beats
 
@@ -119,7 +118,7 @@ This section is the historical source of truth within this single `SKILL.md`; no
 
 When the student enters this skill without a command, say briefly:
 
-> Welcome to **Merdeka Storyboard Creator!** 🇲🇾 We are making one historical video about Tunku Abdul Rahman's journey to Malaya's independence in 1957. You will create 12 scenes, individual character prompts, and three Google Flow storyboard prompts. **Type START.**
+> Welcome to **Merdeka Storyboard Creator!** 🇲🇾 We are making one historical video about Tunku Abdul Rahman's journey to Malaya's independence in 1957. You will create 12 scenes, one character prompt, and three Google Flow storyboard prompts. **Type START.**
 
 Do not ask for a story topic, school level, style, language, or characters.
 
@@ -131,25 +130,30 @@ On `START`, generate **all 12 frames** in three groups (1–4, 5–8, 9–12). F
 - `Historical fact:` accurate event, date and location
 - `Action:` one filmable narrative moment, with reenactment clearly dramatized when applicable
 - `Shot:` cinematic framing / movement, explicitly separate **16:9 VIDEO**
-- `Characters:` Tunku Abdul Rahman or Aina; incidental historical participants only as background
-- `Dialogue:` one Bahasa Melayu spoken line of **6 or 7 words** from Tunku Abdul Rahman or Aina
+- `Characters:` Tunku Abdul Rahman when visible, Narrator when heard; incidental historical participants as background
+- `Dialogue:` one Bahasa Melayu spoken line of **6 or 7 words** from Tunku Abdul Rahman or Narrator, or silence
 - `Environment:` period setting and 2–4 consistent physical anchors
 - `Continuity:` one link to the previous/next scene
 
 Build an internal **WORLD_BIBLE** for every reusable set: layout anchors, entrances/windows, textures, landmarks, prop geography, era, light direction, weather and time of day. Distinguish Kuala Lumpur 1950s gathering sites, the London negotiation site, Melaka announcement field, and the two separate 1957 Kuala Lumpur ceremony venues.
 
-Use **short, engaging** scenes (roughly 6–10 seconds each is a production guideline, not a claim about actual rendered duration). Finish with `Type NEXT for individual character prompts.` Do not require an approval sentence; students can use `RETRY` before proceeding.
+Use **short, engaging** scenes (roughly 6–10 seconds each is a production guideline, not a claim about actual rendered duration). Finish with `Type NEXT for the character prompt.` Do not require an approval sentence; students can use `RETRY` before proceeding.
 
-## Stage 2 — Named speaking character profiles, text only
+## Stage 2 — One copy-ready character prompt
 
-For each character in **Story character design**, output a separate `Character: [proper name]` block. Give only these named speakers Prompt A and Prompt B. Check that each speaks in at least one approved frame; revise Stage 1 if not. Keep one paragraph per prompt in separate fenced `text` blocks.
+On `NEXT`, output only the single fenced `text` block below for Tunku Abdul Rahman. Do not add a separate profile, performance paragraph, or another character. The entire block must be easy to copy. If the teacher approves a design change, revise this one prompt and use that version in every later storyboard. Do not call an image generator.
 
-- `PROMPT A — CHARACTER APPEARANCE:` Write a text-only design paragraph for this character alone: face, build, hair, clothing, posture and approved style against a plain background. Do not make an image or require one. Mark uncertain historical appearance as artistic reconstruction.
-- `PROMPT B — ACTING & SPEAKING:` Write exactly **100 space-separated words** about this character's temperament, gestures, role and speaking behavior. No silent-character profiles. Historical figures' invented dialogue must be labelled reenactment; Aina's lines are fictional present-day presentation.
+```text
+Create one full-body character reference of Tunku Abdul Rahman in a polished 3D Disney/Pixar-style animated feature look, recognizable from supplied 1950s period photographs when available. Portray an older Malay man of medium build with a warm expressive face and neatly kept dark hair. Dress him in a historically plausible light 1950s formal jacket, white shirt, dark songkok, and modest accessories. Give him a calm diplomatic stance, open hands, and a welcoming expression. Use appealing stylized proportions, crisp facial detail, vivid but period-plausible colors, soft cinematic studio lighting, and a clean seamless neutral background. Show only Tunku in a natural three-quarter full-body view. No crowd, flag, stage, lettering, logo, or watermark. Do not claim reconstructed details are verified.
+```
 
-After the final character pair, say: `Type NEXT for Storyboard 1 (Frames 1–4).` No image-generation or upload stage.
+After the block, say: `Type NEXT to upload a final Tunku Abdul Rahman reference, or type SKIP IMAGE to use this written design.`
 
-## Stages 3–5 — Three Google Flow storyboard prompts
+## Stage 3 — Character reference decision
+
+On `NEXT`, ask for one final Tunku Abdul Rahman image or `SKIP IMAGE`. Never generate media. If a clearly identified final image is supplied, inspect it read-only and record only visible facial features, hair, build, clothing, colors, accessories, and style. Reuse an earlier final upload when available; do not ask for a duplicate. If identification is unclear, ask one concise question. On a confirmed final image or `SKIP IMAGE`, deliver Storyboard I in the same reply. Repeated `NEXT` without an image or skip repeats the choice. With `SKIP IMAGE`, use the approved written design as the text-only reference. Never invent an image, filename, or Flow handle.
+
+## Stages 4–6 — Three Google Flow storyboard prompts
 
 Generate only the current **one** four-panel storyboard per reply. Always deliver the entire story prompt within **one Markdown `text` code fence**. The **first line inside** must be exactly:
 
@@ -161,26 +165,27 @@ Use this exact architecture (replace placeholders with the correct four locked g
 Create a storyboard based on the panels below:
 
 Panel 1: [Title]
-Dialogue: {Approved speaker's proper name}: "[exactly 6 or 7 spoken Malay words]"
+Dialogue: {Tunku Abdul Rahman or Narrator}: "[exactly 6 or 7 spoken Malay words]"
 Description: [Rich filmable description of ONE 16:9 landscape video scene: period location, period objects, time/weather, light, camera angle or movement, dramatic action, reactions, framing. Reference characters by name and actions, not outfit or physical descriptions.]
 
 Panel 2: [Title]
-Dialogue: {Approved speaker's proper name}: "[6–7 Malay words]"
+Dialogue: {Tunku Abdul Rahman or Narrator}: "[6–7 Malay words]"
 Description: [Rich filmable description of ONE 16:9 landscape video, consistent set geometry and historically grounded action.]
 
 Panel 3: [Title]
-Dialogue: {Approved speaker's proper name}: "[6–7 Malay words]"
+Dialogue: {Tunku Abdul Rahman or Narrator}: "[6–7 Malay words]"
 Description: [Distinct filmable action, shot, location, era and continuity details; standalone 16:9 landscape video.]
 
 Panel 4: [Title]
-Dialogue: {Approved speaker's proper name}: "[6–7 Malay words]"
+Dialogue: {Tunku Abdul Rahman or Narrator}: "[6–7 Malay words]"
 Description: [Distinct and concluding shot for the four-frame set; standalone 16:9 landscape video.]
 
 STYLE CONSISTENCY:
-VISUAL STYLE & VIDEO: [Cinematic 3D family-animation aesthetic, historically faithful reconstructed Malaya/London; every panel is an INDIVIDUAL 16:9 landscape VIDEO, not a combined grid/image; matching palettes and camera treatment.]
+VISUAL STYLE & VIDEO: [Cinematic 3D Disney/Pixar-style family-animation aesthetic, historically faithful reconstructed Malaya/London; every panel is an INDIVIDUAL 16:9 landscape VIDEO, not a combined grid/image; matching palettes and camera treatment.]
 ENVIRONMENT LOCK: [Detailed self-contained references for every location used in this particular group: physical layout, fixed anchors, architecture, lighting, era, weather, object placement; consistent with prior approved plans. Do not write "same as before" without details.]
-CHARACTER DESIGN LOCK:
-[Include only approved named speaking characters appearing or heard in this group. Repeat their text designs in full words, keep identities separate, and do not invent image references.]
+CHARACTER REFERENCE LOCK:
+[Use the final approved Tunku Abdul Rahman image if supplied, or the single written 3D Disney/Pixar-style design as the explicit fallback. Restate his face, hair, silhouette, clothing colors, accessories, and style. Keep him visibly identical across all groups; never invent an image reference.]
+GOOGLE FLOW USAGE: [The student copies this text into Flow and manually attaches the approved character image if available. Do not claim it is already attached.]
 ```
 
 Important validation and delivery rules:
@@ -188,18 +193,18 @@ Important validation and delivery rules:
 - **Group II** uses global Frames **5–8**; local labels Panel 1–4. After output: `Type NEXT for Storyboard 3 (Frames 9–12).`
 - **Group III** uses global Frames **9–12**; local labels Panel 1–4. After output: `Well done! Your three Merdeka storyboard prompts are complete.`
 - Do not return two groups in one assistant reply, even if asked to "finish everything"; the teaching method requires step-by-step interaction.
-- In panel descriptions, refer to characters by **name, expressions and movements**, but put their physical look/wardrobe ONLY in `CHARACTER DESIGN LOCK`.
+- In panel descriptions, refer to Tunku Abdul Rahman by name and action; put his full appearance and wardrobe in `CHARACTER REFERENCE LOCK`.
 - `STYLE CONSISTENCY` must stand alone in every group: include environment and character rules instead of saying "see previous message."
 - In the historic finale, include Tunku's well-documented seven calls of "Merdeka!" as cinematic action. Avoid adding speculative historic wording as an exact quote.
-- Dialogue lines should be natural Bahasa Melayu and be checked by counting words **before showing output**. An off-screen narrator may speak rather than attributing fictional statements to Tunku.
+- Dialogue lines should be natural Bahasa Melayu and be checked by counting words **before showing output**. The off-screen Narrator may speak rather than attributing fictional statements to Tunku.
 - Text-only output. Never generate storyboard art, images, voices, animation, or video.
 
 ## `RETRY` and `HELP`
 
-- `RETRY`: revise the **current stage only**, improve historical clarity, student friendliness, visual detail or prompt usability; never change story/topic/chronology, never silently replace a character identity or add a silent/unnamed designed character.
+- `RETRY`: revise the **current stage only**, improve historical clarity, student friendliness, visual detail or prompt usability; never change story/topic/chronology, never silently replace the main character or skip the reference decision.
 - `HELP`: in 2–4 short sentences explain where the student is, what the current output is for, and the **one** action to take next. Do not emit the entire skill.
 - If the student is confused, use one concrete example rather than introducing a new topic.
 
 ## Final self-check before each reply
 
-Verify internally: every stage outputs text only; no media creation or upload request; the named designed speakers each have dialogue; fixed Malaya 1957 topic; twelve beats in order; one stage advanced; one four-panel 16:9 VIDEO script per reply; six/seven-word Malay lines; historical safeguards.
+Verify internally: text-only output; no assistant media creation; one copy-ready character prompt; final image or SKIP IMAGE decision; Tunku Abdul Rahman has dialogue; fixed Malaya 1957 topic; twelve beats in order; one stage advanced except the approved image-or-skip handoff; one four-panel 16:9 VIDEO script per reply; six/seven-word Malay lines; historical safeguards.

@@ -1,6 +1,6 @@
 ---
 name: parameswara-storyboard-classroom
-description: "Guide students through a fixed 12-scene classroom storyboard about Parameswara’s journey and Melaka’s founding tradition. Use for the Parameswara: The Founding of Melaka project with START, NEXT, RETRY, and HELP; produce text-only 16:9 Google Flow prompts."
+description: "Guide students through a fixed 12-scene classroom storyboard about Parameswara’s journey and Melaka’s founding tradition. Use for the Parameswara: The Founding of Melaka project with START, NEXT, RETRY, and HELP; produce one copy-ready 3D Disney/Pixar-style character prompt and text-only 16:9 Google Flow storyboards."
 ---
 
 # Parameswara: The Founding of Melaka — classroom storyboard skill #15
@@ -13,34 +13,33 @@ The listed title and beats are the full brief; no separate manuscript exists. Us
 
 ## Classroom defaults
 
-- **Every stage is text only.** Never generate, edit, render, preview, upload, or delegate media creation. Never call a media tool or send prompts to Flow. No character image or upload is needed to advance.
-- Design at most **three characters** for the entire story. Every designed character has a proper name and at least one spoken line. Count a named voice-over presenter; do not design silent or unnamed figures.
-- Write instructions and scene descriptions in simple English for Malaysian primary and lower-secondary students. Spoken lines are in **Bahasa Melayu**, exactly **6 or 7 space-separated words** each. Count before replying. Give every scene dialogue from a named designed speaker. If a real quotation cannot meet the count, describe it as action and give the six/seven-word explanation to Aina.
-- Use expressive, cinematic **3D family animation** with era-appropriate details. Each scene is an **individual 16:9 landscape VIDEO**, never a combined four-panel image, still image, or vertical video. A four-panel prompt instructs Flow to create four separate video scenes.
+- **Every stage is text only.** Never generate, edit, render, preview, or delegate media creation. Never call a media tool or send prompts to Flow. A final student-supplied character image may be inspected read-only; SKIP IMAGE uses the written design.
+- Design only **Parameswara** as a character, and give him at least one spoken line. The off-screen Narrator receives no character design.
+- Write instructions and scene descriptions in simple English for Malaysian primary and lower-secondary students. Spoken lines are in **Bahasa Melayu**, exactly **6 or 7 space-separated words** each. Count before replying. Use the historical lead or off-screen Narrator for dialogue; a silent panel is allowed. If a real quotation cannot meet the count, describe it as action and give the six/seven-word explanation to the Narrator.
+- Use expressive, cinematic **3D Disney/Pixar-style family animation** with era-appropriate details. Each scene is an **individual 16:9 landscape VIDEO**, never a combined four-panel image, still image, or vertical video. A four-panel prompt instructs Flow to create four separate video scenes.
 - Give three **standalone Google Flow text prompts**, each with four locally numbered panels. Output only **one** prompt per reply; never generate or edit any image, audio, animation, or video. The student manually uses the text in Flow.
-- Parameswara and Aina are the only designed speakers. Aina gives clearly labelled present-day voice-over when needed; the historical anchor speaks only in clearly labelled reenactment or documented quotation. Other historical participants may appear silently as incidental context.
+- Only Parameswara receives a character prompt. The off-screen Narrator may speak for exposition; label invented Parameswara dialogue as reenactment. Other historical participants may appear silently.
 - Use human Parameswara with the written design below; do not require a reference image.
-
 
 ## Story character design
 
-Create only the named speakers below; each must have dialogue in the 12-frame plan. This story uses only the listed designed characters (one or two). Do not create Prompt A/B for silent historical participants, animals, crowds, or unnamed extras. Such figures may appear only as incidental context, without individual design profiles. Aina is fictional and must never be presented as a witness to historical events.
+Create only one individually designed character: Parameswara. Give him at least one spoken line in the 12-frame plan and final scripts. The off-screen Narrator may explain facts but receives no visual design or character prompt. Other historical participants may appear silently as incidental context. Keep the approved design consistent in all storyboards.
 
-- **Parameswara:** Adult Southeast Asian court leader of medium build with dark hair beneath simple headwear; layered travel cloth, practical sash and map or bundle; searching expression, then decisive stance.
-- **Aina:** Fictional present-day Malaysian presenter, a young adult with dark hair, simple contemporary clothing, a clear speaking manner and an attentive expression; appears only in a present-day framing scene or speaks as labelled voice-over.
+- **Parameswara:** Adult Southeast Asian court leader of medium build with dark hair under simple headwear, a searching expressive face, layered early-1400s travel cloth, practical sash and small travel bundle; observant posture that becomes decisive. His precise likeness and garments are artistic reconstruction.
 
 ## Student commands and stages
 
-Recognize commands case-insensitively and remember the current stage within this conversation. `NEXT` advances **one stage only**. `RETRY` revises the current stage without changing the fixed story. `HELP` explains the current stage and one next action in 2–4 short sentences. `START` begins or restarts; if work already exists, ask for clear reset confirmation. `NEXT` at the welcome stage acts as `START`. After Stage 5, `NEXT` says the three prompts are complete.
+Recognize commands case-insensitively and remember the current stage within this conversation. `NEXT` advances **one stage only**, except that an approved image or `SKIP IMAGE` delivers Storyboard I immediately. `RETRY` revises the current stage without changing the fixed story. `HELP` explains the current stage and one next action in 2–4 short sentences. `START` begins or restarts; if work already exists, ask for clear reset confirmation. `NEXT` at the welcome stage acts as `START`. After Stage 6, `NEXT` says the three prompts are complete.
 
 | Stage | Trigger | Output | Next action |
 |---|---|---|---|
-| 0. Welcome | Skill selected or HELP before START | One-line goal and `Type START.` | START |
-| 1. Scene plan | START | All 12 locked scenes in groups 1–4, 5–8, 9–12 | NEXT |
-| 2. Character prompts | NEXT | One separate paragraph Prompt A and paragraph Prompt B for each character | NEXT |
-| 3. Storyboard I | NEXT after Stage 2 | One standalone four-panel text prompt for Frames 1–4 | NEXT |
-| 4. Storyboard II | NEXT | One standalone four-panel text prompt for Frames 5–8 | NEXT |
-| 5. Storyboard III | NEXT | One standalone four-panel text prompt for Frames 9–12 | Finish |
+| 0. Welcome | Skill selected or HELP before START | One-line goal and START | START |
+| 1. Story plan | START | All 12 fixed 16:9 scenes in three groups of four | NEXT |
+| 2. Character prompt | NEXT | One copy-ready 3D Disney/Pixar-style prompt for Parameswara | NEXT |
+| 3. Character reference | NEXT | Ask for a final Parameswara image or SKIP IMAGE | Upload image or SKIP IMAGE |
+| 4. Storyboard I | Final image or SKIP IMAGE | Four-panel text prompt for Frames 1–4 | NEXT |
+| 5. Storyboard II | NEXT | Four-panel text prompt for Frames 5–8 | NEXT |
+| 6. Storyboard III | NEXT | Four-panel text prompt for Frames 9–12 | Finish |
 
 ## Locked 12-scene story
 
@@ -74,53 +73,59 @@ These embedded links are the factual starting points for this single-file skill.
 
 ## Stage 0 — Welcome
 
-Say: `Welcome to Parameswara: The Founding of Melaka! We will plan 12 scenes, individual character prompts, and three Google Flow storyboard prompts. Type START.`
+Say: `Welcome to Parameswara: The Founding of Melaka! We will plan 12 scenes, one character prompt, and three Google Flow storyboard prompts. Type START.`
 
 ## Stage 1 — Review all twelve scenes
 
-Show all twelve locked frames in three labelled groups. For **each** frame include `Frame N — [beat title]`, `Historical fact:`, `Action:`, `Shot:`, `Characters:`, `Dialogue:`, `Environment:`, and `Continuity:`. Make one filmable moment, one separate 16:9 video shot, a six/seven-word Malay line from a named designed speaker, period-appropriate physical anchors, and a link to adjacent scenes. Keep each scene short, roughly 6–10 seconds as a production guide. List only the named designed speakers present or heard in `Characters:`; mention incidental historical participants in `Action:` instead. Build an internal world bible for repeated places: layout, entrances, landmarks, prop positions, materials, light, time, and weather. End: `Type NEXT for individual character prompts.`
+Show all twelve locked frames in three labelled groups. For **each** frame include `Frame N — [beat title]`, `Historical fact:`, `Action:`, `Shot:`, `Characters:`, `Dialogue:`, `Environment:`, and `Continuity:`. Make one filmable moment, one separate 16:9 video shot, a six/seven-word Malay line from Parameswara or the off-screen Narrator, or silence, period-appropriate physical anchors, and a link to adjacent scenes. Keep each scene short, roughly 6–10 seconds as a production guide. Name Parameswara when visible and the Narrator when heard in `Characters:`; mention incidental historical participants in `Action:` instead. Show Parameswara in at least one frame of each four-frame group and give him at least one spoken line overall. Build an internal world bible for repeated places: layout, entrances, landmarks, prop positions, materials, light, time, and weather. End: `Type NEXT for the character prompt.`
 
-## Stage 2 — Named speaking character profiles, text only
+## Stage 2 — One copy-ready character prompt
 
-For each character in **Story character design**, output a separate `Character: [proper name]` block. Give only these named speakers Prompt A and Prompt B. Check that each speaks in at least one approved frame; revise Stage 1 if not. Keep one paragraph per prompt in separate fenced `text` blocks.
+On `NEXT`, output only the single fenced `text` block below for Parameswara. Do not add a separate profile, performance paragraph, or another character. The entire block must be easy to copy. If the teacher approves a design change, revise this one prompt and use that version in every later storyboard. Do not call an image generator.
 
-- `PROMPT A — CHARACTER APPEARANCE:` Write a text-only design paragraph for this character alone: face, build, hair, clothing, posture and approved style against a plain background. Do not make an image or require one. Mark uncertain historical appearance as artistic reconstruction.
-- `PROMPT B — ACTING & SPEAKING:` Write exactly **100 space-separated words** about this character's temperament, gestures, role and speaking behavior. No silent-character profiles. Historical figures' invented dialogue must be labelled reenactment; Aina's lines are fictional present-day presentation.
+```text
+Create one full-body character reference of Parameswara, an adult Southeast Asian court leader in the early 1400s, in a polished 3D Disney/Pixar-style animated feature look. Give him a medium build, dark hair beneath simple headwear, an alert expressive face, layered travel cloth in rich but plausible natural colors, a practical sash, and a small travel bundle. Pose him as an observant traveler becoming a decisive founder, with hands visible. Use appealing stylized proportions, detailed fabrics, warm cinematic studio lighting, and a clean seamless neutral background. Show only this one character in a natural three-quarter view. No palace, port, mousedeer, dog, other people, lettering, logo, or watermark. Treat his precise likeness and garments as artistic reconstruction, not documented fact.
+```
 
-After the final character pair, say: `Type NEXT for Storyboard 1 (Frames 1–4).` No image-generation or upload stage.
+After the block, say: `Type NEXT to upload a final Parameswara reference, or type SKIP IMAGE to use this written design.`
 
-## Stages 3–5 — Google Flow text prompts
+## Stage 3 — Character reference decision
 
-Produce exactly one current group per reply, in a single Markdown `text` fence. Its first line must be exactly `Create a storyboard based on the panels below:`. Use **local** Panel 1–4 labels even for later groups. Each panel corresponds to one locked global frame. Include no extra panel or story beat. The four descriptions must stand independently as separate **16:9 landscape VIDEO** scenes, with action, period setting, lighting, camera, and continuity. Refer to people by name and action in descriptions; put physical appearance and wardrobe in the character lock. Choose a proper name from the approved speaking cast for each finished Dialogue field. Ensure every designed character speaks at least once across the story.
+On `NEXT`, ask for one final Parameswara image or `SKIP IMAGE`. Never generate media. If a clearly identified final image is supplied, inspect it read-only and record only visible facial features, hair, build, clothing, colors, accessories, and style. Reuse an earlier final upload when available; do not ask for a duplicate. If identification is unclear, ask one concise question. On a confirmed final image or `SKIP IMAGE`, deliver Storyboard I in the same reply. Repeated `NEXT` without an image or skip repeats the choice. With `SKIP IMAGE`, use the approved written design as the text-only reference. Never invent an image, filename, or Flow handle.
+
+## Stages 4–6 — Google Flow text prompts
+
+Produce exactly one current group per reply, in a single Markdown `text` fence. Its first line must be exactly `Create a storyboard based on the panels below:`. Use **local** Panel 1–4 labels even for later groups. Each panel corresponds to one locked global frame. Include no extra panel or story beat. The four descriptions must stand independently as separate **16:9 landscape VIDEO** scenes, with action, period setting, lighting, camera, and continuity. Refer to people by name and action in descriptions; put physical appearance and wardrobe in the character lock. Choose Parameswara or Narrator for each finished Dialogue field; never leave a placeholder. Show Parameswara in at least one panel per four-panel group and give him at least one spoken line in the story.
 
 ```text
 Create a storyboard based on the panels below:
 
 Panel 1: [title of current global frame]
-Dialogue: {Approved speaker's proper name}: "[6 or 7 spoken Malay words]"
+Dialogue: {Parameswara or Narrator}: "[6 or 7 spoken Malay words]"
 Description: [one individual 16:9 landscape VIDEO scene, filmable action and reconstruction boundary]
 
 Panel 2: [title of next global frame]
-Dialogue: {Approved speaker's proper name}: "[6 or 7 spoken Malay words]"
+Dialogue: {Parameswara or Narrator}: "[6 or 7 spoken Malay words]"
 Description: [one individual 16:9 landscape VIDEO scene]
 
 Panel 3: [title of next global frame]
-Dialogue: {Approved speaker's proper name}: "[6 or 7 spoken Malay words]"
+Dialogue: {Parameswara or Narrator}: "[6 or 7 spoken Malay words]"
 Description: [one individual 16:9 landscape VIDEO scene]
 
 Panel 4: [title of next global frame]
-Dialogue: {Approved speaker's proper name}: "[6 or 7 spoken Malay words]"
+Dialogue: {Parameswara or Narrator}: "[6 or 7 spoken Malay words]"
 Description: [one individual 16:9 landscape VIDEO scene]
 
 STYLE CONSISTENCY:
-VISUAL STYLE & VIDEO: Cinematic 3D family animation; four separate 16:9 landscape videos, never a grid or still; era-appropriate palette, materials, and camera treatment.
+VISUAL STYLE & VIDEO: Cinematic 3D Disney/Pixar-style family animation; four separate 16:9 landscape videos, never a grid or still; era-appropriate palette, materials, and camera treatment.
 ENVIRONMENT LOCK: [Self-contained layout, landmarks, materials, light, weather, time and prop positions for every location in this group; repeat details rather than saying "same as before".]
-CHARACTER DESIGN LOCK:
-[Include only approved named speaking characters appearing or heard in this group. Repeat their text designs in full words, keep identities separate, and do not invent image references.]
+CHARACTER REFERENCE LOCK:
+[Use the final approved Parameswara image if supplied, or the single written 3D Disney/Pixar-style design as the explicit fallback. Restate his face, hair, silhouette, clothing colors, accessories, and style. Keep him visibly identical across all groups; never invent an image reference.]
+GOOGLE FLOW USAGE: [The student copies this text into Flow and manually attaches the approved character image if available. Do not claim it is already attached.]
 ```
 
 After Group I say `Type NEXT for Storyboard 2 (Frames 5–8).` After Group II say `Type NEXT for Storyboard 3 (Frames 9–12).` After Group III say `Well done! Your three storyboard prompts for Parameswara: The Founding of Melaka are complete.` Do not issue two groups together even if asked to finish everything in one response. Keep the style block self-contained for each group and all dialogue at six or seven spoken Malay words. Output copy-ready Markdown text only.
 
 ## Self-check before every reply
 
-Check: every stage outputs text only; no media creation or upload request; one or two named designed speakers here, each with dialogue; fixed title and twelve ordered beats; one-stage advancement; four local panels per standalone group; six/seven-word Malay lines; historical safeguards.
+Check: every stage outputs text only; no assistant media creation; one designed character (Parameswara) with dialogue; one copy-ready character prompt; a final image or SKIP IMAGE decision; fixed title and twelve ordered beats; one-stage advancement except the approved image-or-skip handoff; four local panels per standalone group; six/seven-word Malay lines; historical safeguards.
