@@ -21,7 +21,7 @@ This is a **single-project classroom skill**, not a general story creator:
 
 Create only one individually designed character: Tunku Abdul Rahman. Give him at least one spoken line in the 12-frame plan and final scripts. The off-screen Narrator may explain facts but receives no visual design or character prompt. Other historical participants may appear silently as incidental context. Keep the approved design consistent in all storyboards.
 
-- **Tunku Abdul Rahman:** Older Malay man of medium build with a warm expressive face and neatly kept dark hair; light 1950s formal jacket with a white shirt and dark songkok at public events, modest accessories, open diplomatic gestures, and a raised arm at the proclamation. Match supplied period photographs when available; other visual details are reconstruction.
+- **Tunku Abdul Rahman:** Older Malay man of medium build with warm brown eyes, a gentle smile, and neatly kept dark hair. His light cream 1950s formal jacket, white shirt, dark charcoal songkok, and open diplomatic gestures form the consistent design; match supplied period photographs when available and treat unsupported details as reconstruction.
 
 Keep Tunku's documented Merdeka calls distinct from invented reenactment dialogue.
 
@@ -144,7 +144,7 @@ Use **short, engaging** scenes (roughly 6–10 seconds each is a production guid
 On `NEXT`, output only the single fenced `text` block below for Tunku Abdul Rahman. Do not add a separate profile, performance paragraph, or another character. The entire block must be easy to copy. If the teacher approves a design change, revise this one prompt and use that version in every later storyboard. Do not call an image generator.
 
 ```text
-Create one full-body character reference of Tunku Abdul Rahman in a polished 3D Disney/Pixar-style animated feature look, recognizable from supplied 1950s period photographs when available. Portray an older Malay man of medium build with a warm expressive face and neatly kept dark hair. Dress him in a historically plausible light 1950s formal jacket, white shirt, dark songkok, and modest accessories. Give him a calm diplomatic stance, open hands, and a welcoming expression. Use appealing stylized proportions, crisp facial detail, vivid but period-plausible colors, soft cinematic studio lighting, and a clean seamless neutral background. Show only Tunku in a natural three-quarter full-body view. No crowd, flag, stage, lettering, logo, or watermark. Do not claim reconstructed details are verified.
+A 3D animated character in a vibrant Disney and Pixar visual style, featuring Tunku Abdul Rahman as an older Malay leader in the 1950s. Match his recognizable facial features to supplied period photographs when available; otherwise use a medium build, warm brown eyes, gently arched brows, neatly kept dark hair, and a welcoming smile as artistic reconstruction. He wears a light cream 1950s formal jacket over a crisp white shirt, a dark charcoal songkok, and modest period accessories. Show one character only in a waist-up three-quarter portrait, both hands visible in an open, diplomatic gesture. Use expressive but consistent facial proportions, rich fabric textures, vivid period-plausible colors, professional soft studio lighting, and a clean seamless white background. Keep his face, songkok, jacket, and shirt identical in every later scene. No crowd, flag, stage, text, logo, or watermark. Do not present unsupported details as verified history.
 ```
 
 After the block, say: `Type NEXT to upload a final Tunku Abdul Rahman reference, or type SKIP IMAGE to use this written design.`
@@ -184,7 +184,7 @@ STYLE CONSISTENCY:
 VISUAL STYLE & VIDEO: [Cinematic 3D Disney/Pixar-style family-animation aesthetic, historically faithful reconstructed Malaya/London; every panel is an INDIVIDUAL 16:9 landscape VIDEO, not a combined grid/image; matching palettes and camera treatment.]
 ENVIRONMENT LOCK: [Detailed self-contained references for every location used in this particular group: physical layout, fixed anchors, architecture, lighting, era, weather, object placement; consistent with prior approved plans. Do not write "same as before" without details.]
 CHARACTER REFERENCE LOCK:
-[Use the final approved Tunku Abdul Rahman image if supplied, or the single written 3D Disney/Pixar-style design as the explicit fallback. Restate his face, hair, silhouette, clothing colors, accessories, and style. Keep him visibly identical across all groups; never invent an image reference.]
+[Use the final approved Tunku Abdul Rahman image if supplied, or the single written 3D Disney/Pixar-style design as the explicit fallback. Restate his approved eye color, brows, face, hair, headwear, garment colors and textures, accessories, and style; do not invent details hidden in an uploaded image. Keep him visibly identical across all groups; never invent an image reference.]
 GOOGLE FLOW USAGE: [The student copies this text into Flow and manually attaches the approved character image if available. Do not claim it is already attached.]
 ```
 

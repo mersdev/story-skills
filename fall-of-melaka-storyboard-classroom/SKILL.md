@@ -26,7 +26,7 @@ The listed title and beats are the full brief; no separate manuscript exists. Us
 
 Create only one individually designed character: Sultan Mahmud Shah. Give him at least one spoken line in the 12-frame plan and final scripts. The off-screen Narrator may explain facts but receives no visual design or character prompt. Other historical participants may appear silently as incidental context. Keep the approved design consistent in all storyboards.
 
-- **Sultan Mahmud Shah:** Adult Malay ruler in Melaka around 1511; dark hair beneath modest court headwear, a composed expressive face, medium build, layered light court cloth over a darker waist sash, restrained period-plausible accessories, and an upright diplomatic posture. His precise likeness and costume details are artistic reconstruction.
+- **Sultan Mahmud Shah:** Adult Malay ruler in Melaka around 1511, with a medium build, warm brown eyes, defined dark brows, dark hair beneath modest court headwear, and a composed face. His ivory woven court tunic, deep burgundy waist sash, restrained gold trim, and upright diplomatic posture are consistent artistic reconstruction, not a documented portrait.
 
 ## Student commands and stages
 
@@ -85,7 +85,7 @@ Show all twelve locked frames in three labelled groups. For **each** frame inclu
 On `NEXT`, output only the single fenced `text` block below for Sultan Mahmud Shah. Do not add a separate profile, performance paragraph, or another character. The entire block must be easy to copy. If the teacher approves a design change, revise this one prompt and use that version in every later storyboard. Do not call an image generator.
 
 ```text
-Create one full-body character reference of Sultan Mahmud Shah, the adult Malay ruler of Melaka around 1511, in a polished 3D Disney/Pixar-style animated feature look. Give him a composed expressive face, dark hair under modest Malay court headwear, a medium build, layered light court cloth, a darker waist sash, and restrained period-plausible accessories. Show a dignified upright stance with hands visible and a calm, authoritative expression. Use appealing stylized proportions, detailed fabric, warm cinematic studio lighting, and a clean seamless neutral background. Show only this one character in a natural three-quarter view. No throne, fort, battle, other people, lettering, logo, or watermark. Treat unverified facial and costume details as artistic reconstruction, not a documented portrait.
+A 3D animated character in a vibrant Disney and Pixar visual style, featuring Sultan Mahmud Shah, the adult Malay ruler of Melaka around 1511. Give him a medium build, warm brown eyes, defined dark brows, neatly kept dark hair beneath modest Malay court headwear, and a composed face with a restrained, confident smile. He wears an ivory woven court tunic with a deep burgundy waist sash, subtle gold trim, and restrained period-plausible accessories. Show one character only in a waist-up three-quarter portrait, both hands visible in a calm diplomatic gesture. Use expressive but consistent facial proportions, rich woven fabric textures, vivid historically plausible colors, professional soft studio lighting, and a clean seamless white background. Keep his face, headwear, tunic, and sash identical in every later scene. No throne, fort, battle, other people, text, logo, or watermark. His precise likeness and costume details are artistic reconstruction, not a documented portrait.
 ```
 
 After the block, say: `Type NEXT to upload a final Sultan Mahmud Shah reference, or type SKIP IMAGE to use this written design.`
@@ -121,7 +121,7 @@ STYLE CONSISTENCY:
 VISUAL STYLE & VIDEO: Cinematic 3D Disney/Pixar-style family animation; four separate 16:9 landscape videos, never a grid or still; era-appropriate palette, materials, and camera treatment.
 ENVIRONMENT LOCK: [Self-contained layout, landmarks, materials, light, weather, time and prop positions for every location in this group; repeat details rather than saying "same as before".]
 CHARACTER REFERENCE LOCK:
-[Use the final approved Sultan Mahmud Shah image if supplied, or the single written 3D Disney/Pixar-style design as the explicit fallback. Restate his face, hair, silhouette, clothing colors, accessories, and style. Keep him visibly identical across all groups; never invent an image reference.]
+[Use the final approved Sultan Mahmud Shah image if supplied, or the single written 3D Disney/Pixar-style design as the explicit fallback. Restate his approved eye color, brows, face, hair, headwear, garment colors and textures, accessories, and style; do not invent details hidden in an uploaded image. Keep him visibly identical across all groups; never invent an image reference.]
 GOOGLE FLOW USAGE: [The student copies this text into Flow and manually attaches the approved character image if available. Do not claim it is already attached.]
 ```
 

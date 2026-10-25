@@ -25,7 +25,7 @@ The listed title and beats are the full brief; no separate manuscript exists. Us
 
 Create only one individually designed character: Parameswara. Give him at least one spoken line in the 12-frame plan and final scripts. The off-screen Narrator may explain facts but receives no visual design or character prompt. Other historical participants may appear silently as incidental context. Keep the approved design consistent in all storyboards.
 
-- **Parameswara:** Adult Southeast Asian court leader of medium build with dark hair under simple headwear, a searching expressive face, layered early-1400s travel cloth, practical sash and small travel bundle; observant posture that becomes decisive. His precise likeness and garments are artistic reconstruction.
+- **Parameswara:** Adult Southeast Asian court leader of medium build with alert brown eyes, strong dark brows, and neatly tied dark hair beneath simple headwear. His deep indigo early-1400s travel tunic, woven ochre shoulder cloth, rust-colored sash, and observant posture form a consistent artistic reconstruction, not a documented likeness.
 
 ## Student commands and stages
 
@@ -84,7 +84,7 @@ Show all twelve locked frames in three labelled groups. For **each** frame inclu
 On `NEXT`, output only the single fenced `text` block below for Parameswara. Do not add a separate profile, performance paragraph, or another character. The entire block must be easy to copy. If the teacher approves a design change, revise this one prompt and use that version in every later storyboard. Do not call an image generator.
 
 ```text
-Create one full-body character reference of Parameswara, an adult Southeast Asian court leader in the early 1400s, in a polished 3D Disney/Pixar-style animated feature look. Give him a medium build, dark hair beneath simple headwear, an alert expressive face, layered travel cloth in rich but plausible natural colors, a practical sash, and a small travel bundle. Pose him as an observant traveler becoming a decisive founder, with hands visible. Use appealing stylized proportions, detailed fabrics, warm cinematic studio lighting, and a clean seamless neutral background. Show only this one character in a natural three-quarter view. No palace, port, mousedeer, dog, other people, lettering, logo, or watermark. Treat his precise likeness and garments as artistic reconstruction, not documented fact.
+A 3D animated character in a vibrant Disney and Pixar visual style, featuring Parameswara, an adult Southeast Asian court leader traveling in the early 1400s. Give him a medium build, alert brown eyes, strong dark brows, neatly tied dark hair beneath simple headwear, and a thoughtful expression that suggests determination. He wears a deep indigo travel tunic, a textured woven ochre shoulder cloth, a rust-colored sash, and a narrow strap for a small travel bundle. Show one character only in a waist-up three-quarter portrait, both hands visible in an observant, purposeful gesture. Use expressive but consistent facial proportions, rich handwoven fabric textures, vivid historically plausible colors, professional soft studio lighting, and a clean seamless white background. Keep his face, headwear, tunic, shoulder cloth, and sash identical in every later scene. No palace, port, mousedeer, dog, other people, text, logo, or watermark. His exact likeness and clothing are artistic reconstruction, not documented fact.
 ```
 
 After the block, say: `Type NEXT to upload a final Parameswara reference, or type SKIP IMAGE to use this written design.`
@@ -120,7 +120,7 @@ STYLE CONSISTENCY:
 VISUAL STYLE & VIDEO: Cinematic 3D Disney/Pixar-style family animation; four separate 16:9 landscape videos, never a grid or still; era-appropriate palette, materials, and camera treatment.
 ENVIRONMENT LOCK: [Self-contained layout, landmarks, materials, light, weather, time and prop positions for every location in this group; repeat details rather than saying "same as before".]
 CHARACTER REFERENCE LOCK:
-[Use the final approved Parameswara image if supplied, or the single written 3D Disney/Pixar-style design as the explicit fallback. Restate his face, hair, silhouette, clothing colors, accessories, and style. Keep him visibly identical across all groups; never invent an image reference.]
+[Use the final approved Parameswara image if supplied, or the single written 3D Disney/Pixar-style design as the explicit fallback. Restate his approved eye color, brows, face, hair, headwear, garment colors and textures, accessories, and style; do not invent details hidden in an uploaded image. Keep him visibly identical across all groups; never invent an image reference.]
 GOOGLE FLOW USAGE: [The student copies this text into Flow and manually attaches the approved character image if available. Do not claim it is already attached.]
 ```
 
