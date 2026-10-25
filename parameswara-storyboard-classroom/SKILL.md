@@ -1,6 +1,6 @@
 ---
 name: parameswara-storyboard-classroom
-description: "Guide students through a fixed 12-scene classroom storyboard about Parameswara’s journey and Melaka’s founding tradition. Use for the Parameswara: The Founding of Melaka project with START, NEXT, RETRY, and HELP; produce one copy-ready 3D Disney/Pixar-style character prompt and text-only 16:9 Google Flow storyboards."
+description: "Guide students through a fixed 12-scene classroom storyboard about Parameswara’s journey and Melaka’s founding tradition. Use for the Parameswara: The Founding of Melaka project with START, NEXT, RETRY, and HELP; produce two copy-ready 3D Disney/Pixar-style character prompts and text-only 16:9 Google Flow storyboards."
 ---
 
 # Parameswara: The Founding of Melaka — classroom storyboard skill #15
@@ -23,23 +23,24 @@ The listed title and beats are the full brief; no separate manuscript exists. Us
 
 ## Story character design
 
-Create only one individually designed character: Parameswara. Give him at least one spoken line in the 12-frame plan and final scripts. The off-screen Narrator may explain facts but receives no visual design or character prompt. Other historical participants may appear silently as incidental context. Keep the approved design consistent in all storyboards.
+Design only Parameswara as a main speaking character. Give him dialogue in the approved 12-frame plan; the off-screen Narrator has no character profile. Silent historical participants may appear as incidental context. Keep the approved image or text design consistent throughout.
 
-- **Parameswara:** Adult Southeast Asian court leader of medium build with alert brown eyes, strong dark brows, and neatly tied dark hair beneath simple headwear. His deep indigo early-1400s travel tunic, woven ochre shoulder cloth, rust-colored sash, and observant posture form a consistent artistic reconstruction, not a documented likeness.
+- **Parameswara:** An adult Southeast Asian court leader with a medium build, alert brown eyes, strong dark brows, and neatly tied dark hair beneath simple headwear. His deep indigo travel tunic, woven ochre shoulder cloth, rust-colored sash, sandals, and small travel bundle are a consistent artistic reconstruction.
+
 
 ## Student commands and stages
 
-Recognize commands case-insensitively and remember the current stage within this conversation. `NEXT` advances **one stage only**, except that an approved image or `SKIP IMAGE` delivers Storyboard I immediately. `RETRY` revises the current stage without changing the fixed story. `HELP` explains the current stage and one next action in 2–4 short sentences. `START` begins or restarts; if work already exists, ask for clear reset confirmation. `NEXT` at the welcome stage acts as `START`. After Stage 6, `NEXT` says the three prompts are complete.
+Recognize commands case-insensitively and remember the current stage within this conversation. `NEXT` advances **one stage only**. Also treat `Plan approved` as approval to enter Step 2. An uploaded image or `SKIP IMAGE` starts the Step 2.5 lock review; only lock approval begins Storyboard I. `RETRY` revises the current stage without changing the fixed story. `HELP` explains the current stage and one next action in 2–4 short sentences. `START` begins or restarts; if work already exists, ask for clear reset confirmation. `NEXT` at the welcome stage acts as `START`. After Stage 5, `NEXT` says the three prompts are complete.
 
 | Stage | Trigger | Output | Next action |
 |---|---|---|---|
 | 0. Welcome | Skill selected or HELP before START | One-line goal and START | START |
-| 1. Story plan | START | All 12 fixed 16:9 scenes in three groups of four | NEXT |
-| 2. Character prompt | NEXT | One copy-ready 3D Disney/Pixar-style prompt for Parameswara | NEXT |
-| 3. Character reference | NEXT | Ask for a final Parameswara image or SKIP IMAGE | Upload image or SKIP IMAGE |
-| 4. Storyboard I | Final image or SKIP IMAGE | Four-panel text prompt for Frames 1–4 | NEXT |
-| 5. Storyboard II | NEXT | Four-panel text prompt for Frames 5–8 | NEXT |
-| 6. Storyboard III | NEXT | Four-panel text prompt for Frames 9–12 | Finish |
+| 1. Story plan | START | All 12 fixed 16:9 scenes in three groups of four | Approve plan |
+| 2. Character profile and prompts | Plan approved or NEXT | Profile, copy-ready Prompt A, and 100-word Prompt B for Parameswara | Approve or revise |
+| 2.5 Character image and lock | Step 2 approval | Request final Parameswara image or SKIP IMAGE; summarize identity | Approve character reference lock |
+| 3. Storyboard I | Character reference lock approved | Four-panel text prompt for Frames 1–4 | NEXT |
+| 4. Storyboard II | NEXT | Four-panel text prompt for Frames 5–8 | NEXT |
+| 5. Storyboard III | NEXT | Four-panel text prompt for Frames 9–12 | Finish |
 
 ## Locked 12-scene story
 
@@ -73,27 +74,42 @@ These embedded links are the factual starting points for this single-file skill.
 
 ## Stage 0 — Welcome
 
-Say: `Welcome to Parameswara: The Founding of Melaka! We will plan 12 scenes, one character prompt, and three Google Flow storyboard prompts. Type START.`
+Say: `Welcome to Parameswara: The Founding of Melaka! We will plan 12 scenes, two character prompts, and three Google Flow storyboard prompts. Type START.`
 
 ## Stage 1 — Review all twelve scenes
 
-Show all twelve locked frames in three labelled groups. For **each** frame include `Frame N — [beat title]`, `Historical fact:`, `Action:`, `Shot:`, `Characters:`, `Dialogue:`, `Environment:`, and `Continuity:`. Make one filmable moment, one separate 16:9 video shot, a six/seven-word Malay line from Parameswara or the off-screen Narrator, or silence, period-appropriate physical anchors, and a link to adjacent scenes. Keep each scene short, roughly 6–10 seconds as a production guide. Name Parameswara when visible and the Narrator when heard in `Characters:`; mention incidental historical participants in `Action:` instead. Show Parameswara in at least one frame of each four-frame group and give him at least one spoken line overall. Build an internal world bible for repeated places: layout, entrances, landmarks, prop positions, materials, light, time, and weather. End: `Type NEXT for the character prompt.`
+Show all twelve locked frames in three labelled groups. For **each** frame include `Frame N — [beat title]`, `Historical fact:`, `Action:`, `Shot:`, `Characters:`, `Dialogue:`, `Environment:`, and `Continuity:`. Make one filmable moment, one separate 16:9 video shot, a six/seven-word Malay line from Parameswara or the off-screen Narrator, or silence, period-appropriate physical anchors, and a link to adjacent scenes. Keep each scene short, roughly 6–10 seconds as a production guide. Name Parameswara when visible and the Narrator when heard in `Characters:`; mention incidental historical participants in `Action:` instead. Show Parameswara in at least one frame of each four-frame group and give him a 6- or 7-word reenactment line in Frames 1, 4, 7, and 9. Build an internal world bible for repeated places: layout, entrances, landmarks, prop positions, materials, light, time, and weather. End: `Type NEXT for the character prompts.`
 
-## Stage 2 — One copy-ready character prompt
+## Step 2 — Main speaking character profile and text prompts
 
-On `NEXT`, output only the single fenced `text` block below for Parameswara. Do not add a separate profile, performance paragraph, or another character. The entire block must be easy to copy. If the teacher approves a design change, revise this one prompt and use that version in every later storyboard. Do not call an image generator.
+After the student approves the 12-frame plan, output the character information and both copy-ready text prompts below. Prompt A describes one character on a clean studio background; Prompt B describes acting and speaking in exactly 100 space-separated words. Do not generate or edit media. If the teacher approves a change, revise the affected prompt and check the word count again.
+
+### Character information
+
+- **Name/ID:** Parameswara
+- **Role and dialogue frames:** Main historical protagonist; speaks in Frames 1, 4, 7, and 9.
+- **Proposed features and wardrobe:** An adult Southeast Asian court leader with a medium build, alert brown eyes, strong dark brows, and neatly tied dark hair beneath simple headwear. His deep indigo travel tunic, woven ochre shoulder cloth, rust-colored sash, sandals, and small travel bundle are a consistent artistic reconstruction.
+- **Personality and speaking style:** Thoughtful and observant at first, growing decisive; speaks in measured Malay reenactment dialogue with practical gestures.
+
+### Prompt A — Character image (written text only)
 
 ```text
-A 3D animated character in a vibrant Disney and Pixar visual style, featuring Parameswara, an adult Southeast Asian court leader traveling in the early 1400s. Give him a medium build, alert brown eyes, strong dark brows, neatly tied dark hair beneath simple headwear, and a thoughtful expression that suggests determination. He wears a deep indigo travel tunic, a textured woven ochre shoulder cloth, a rust-colored sash, and a narrow strap for a small travel bundle. Show one character only in a waist-up three-quarter portrait, both hands visible in an observant, purposeful gesture. Use expressive but consistent facial proportions, rich handwoven fabric textures, vivid historically plausible colors, professional soft studio lighting, and a clean seamless white background. Keep his face, headwear, tunic, shoulder cloth, and sash identical in every later scene. No palace, port, mousedeer, dog, other people, text, logo, or watermark. His exact likeness and clothing are artistic reconstruction, not documented fact.
+A full-body 3D animated character in a vibrant Pixar and Disney-inspired style representing Parameswara, an adult Southeast Asian court leader traveling in the early 1400s. He has alert brown eyes, strong dark brows, neatly tied dark hair beneath simple headwear, and a thoughtful expression that suggests determination. He wears a deep indigo travel tunic, a textured woven ochre shoulder cloth, a rust-colored sash, simple sandals, and a small travel bundle. Show his hands and feet in an observant, purposeful stance. Use expressive, consistent facial proportions, rich handwoven fabric textures, vivid historically plausible colors, professional soft studio lighting, and a clean seamless off-white background. One character only; no palace, port, mousedeer, dog, other people, text, logo, or watermark. His exact likeness and clothing are artistic reconstruction, not documented fact.
 ```
 
-After the block, say: `Type NEXT to upload a final Parameswara reference, or type SKIP IMAGE to use this written design.`
+### Prompt B — Personality and speaking (written text only)
 
-## Stage 3 — Character reference decision
+```text
+Parameswara speaks as a thoughtful leader who observes before deciding. His Malay delivery is clear and deliberate, with a steady pace and confidence. He begins the journey watchful and uncertain, then grows more decisive as the settlement takes shape. His eyes scan the landscape, his shoulders relax when he sees opportunity, and his hands make restrained gestures. He listens to companions and reacts with curiosity rather than sudden certainty. In the mousedeer episode, his words and reactions belong to legend, separate from documented history. This performance is artistic reconstruction, not evidence of his actual voice, private thoughts, or exact manner.
+```
 
-On `NEXT`, ask for one final Parameswara image or `SKIP IMAGE`. Never generate media. If a clearly identified final image is supplied, inspect it read-only and record only visible facial features, hair, build, clothing, colors, accessories, and style. Reuse an earlier final upload when available; do not ask for a duplicate. If identification is unclear, ask one concise question. On a confirmed final image or `SKIP IMAGE`, deliver Storyboard I in the same reply. Repeated `NEXT` without an image or skip repeats the choice. With `SKIP IMAGE`, use the approved written design as the text-only reference. Never invent an image, filename, or Flow handle.
+Ask whether the student wants to modify either prompt or any character design trait. On approval, go to Step 2.5, not directly to Storyboard I.
 
-## Stages 4–6 — Google Flow text prompts
+## Step 2.5 — Character image upload and identity lock
+
+Request one final clean-background image for Parameswara or an explicit `SKIP IMAGE`. Never generate media. If the final image was already supplied, reuse it; do not demand another upload. Inspect any uploaded image read-only and describe only visible face, hair, build, clothing, colors, accessories, and style. Resolve differences between the image and Prompt A with the student. If `SKIP IMAGE` is chosen, use the approved Prompt A as the text-only reference. Show a short character reference lock summary naming the approved image if one exists, or the text-only fallback, plus the exact appearance invariants. Ask for explicit approval of this lock. Do not claim a nonexistent filename or Flow attachment. Only after lock approval deliver Storyboard I.
+
+## Stages 3–5 — Google Flow text prompts
 
 Produce exactly one current group per reply, in a single Markdown `text` fence. Its first line must be exactly `Create a storyboard based on the panels below:`. Use **local** Panel 1–4 labels even for later groups. Each panel corresponds to one locked global frame. Include no extra panel or story beat. The four descriptions must stand independently as separate **16:9 landscape VIDEO** scenes, with action, period setting, lighting, camera, and continuity. Refer to people by name and action in descriptions; put physical appearance and wardrobe in the character lock. Choose Parameswara or Narrator for each finished Dialogue field; never leave a placeholder. Show Parameswara in at least one panel per four-panel group and give him at least one spoken line in the story.
 
@@ -120,7 +136,7 @@ STYLE CONSISTENCY:
 VISUAL STYLE & VIDEO: Cinematic 3D Disney/Pixar-style family animation; four separate 16:9 landscape videos, never a grid or still; era-appropriate palette, materials, and camera treatment.
 ENVIRONMENT LOCK: [Self-contained layout, landmarks, materials, light, weather, time and prop positions for every location in this group; repeat details rather than saying "same as before".]
 CHARACTER REFERENCE LOCK:
-[Use the final approved Parameswara image if supplied, or the single written 3D Disney/Pixar-style design as the explicit fallback. Restate his approved eye color, brows, face, hair, headwear, garment colors and textures, accessories, and style; do not invent details hidden in an uploaded image. Keep him visibly identical across all groups; never invent an image reference.]
+[Use the final approved Parameswara image if supplied, or approved Prompt A as the explicit text-only fallback. Restate his approved eye color, brows, face, hair, headwear, garment colors and textures, accessories, and style; do not invent details hidden in an uploaded image. Keep him visibly identical across all groups; never invent an image reference.]
 GOOGLE FLOW USAGE: [The student copies this text into Flow and manually attaches the approved character image if available. Do not claim it is already attached.]
 ```
 
@@ -128,4 +144,4 @@ After Group I say `Type NEXT for Storyboard 2 (Frames 5–8).` After Group II sa
 
 ## Self-check before every reply
 
-Check: every stage outputs text only; no assistant media creation; one designed character (Parameswara) with dialogue; one copy-ready character prompt; a final image or SKIP IMAGE decision; fixed title and twelve ordered beats; one-stage advancement except the approved image-or-skip handoff; four local panels per standalone group; six/seven-word Malay lines; historical safeguards.
+Check: every stage outputs text only; no assistant media creation; one designed character (Parameswara) with dialogue; two copy-ready character prompts; a Step 2.5 image-or-skip decision and approved identity lock; fixed title and twelve ordered beats; one-stage advancement and Step 2.5 lock approval; four local panels per standalone group; six/seven-word Malay lines; historical safeguards.
