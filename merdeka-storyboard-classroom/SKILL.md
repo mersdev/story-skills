@@ -1,6 +1,6 @@
 ---
 name: merdeka-storyboard-classroom
-description: A text-only classroom skill about Tunku Abdul Rahman and Malayan independence. Produce a 12-frame plan, two copy-ready 3D Disney/Pixar-style character prompts, and three four-panel Google Flow storyboard prompts with an optional user-supplied character reference.
+description: A text-only classroom skill about Tunku Abdul Rahman and Malayan independence. Produce a 12-frame plan, a character image prompt, a 100-word performance prompt, and three four-panel Google Flow storyboard prompts with an optional user-supplied character reference.
 ---
 
 # Merdeka Storyboard Classroom — Student Edition

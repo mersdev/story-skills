@@ -1,6 +1,6 @@
 ---
 name: fall-of-melaka-storyboard-classroom
-description: Guide students through a fixed 12-scene classroom storyboard about the Portuguese conquest of Melaka and the continuing Malay political legacy. Use for the The Fall of Melaka in 1511 project with START, NEXT, RETRY, and HELP; produce two copy-ready 3D Disney/Pixar-style character prompts and text-only 16:9 Google Flow storyboards.
+description: Guide students through a fixed 12-scene classroom storyboard about the Portuguese conquest of Melaka and the continuing Malay political legacy. Use for The Fall of Melaka in 1511 with START, NEXT, RETRY, and HELP; produce a character image prompt, a 100-word performance prompt, and text-only 16:9 Google Flow storyboards.
 ---
 
 # The Fall of Melaka in 1511 — classroom storyboard skill #18
