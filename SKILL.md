@@ -12,7 +12,7 @@ The generated `SKILL.md` must work on its own. Include its complete topic, twelv
 ## Build the topic-specific skill
 
 1. Use the teacher's story, audience, style, and cast when provided. Default to Malaysian primary and lower-secondary students, English for all non-dialogue text, and cinematic 3D family animation. At the first student step, ask whether **Dialogue** should be in English or Bahasa Melayu; do not choose for the student.
-2. Research historical claims with authoritative sources. Put direct source links and the facts they support **inside the generated skill**. Choose exactly twelve chronological, filmable beats. Keep legends, disputed details, and artistic reconstructions distinct from documented history. Include topic-specific visual safeguards such as period flags, buildings, clothing, and chronology. Do not invent precise dialogue, appearance, interiors, dates, or source-backed claims.
+2. Research historical claims with authoritative sources. Put direct source links and the facts they support **inside the generated skill**. Choose exactly twelve chronological, depictable beats that form one story: a central goal, rising obstacles, consequences, and a resolution. Keep legends, disputed details, and artistic reconstructions distinct from documented history. Include topic-specific visual safeguards such as period flags, buildings, clothing, and chronology. Do not invent precise dialogue, appearance, interiors, dates, or source-backed claims.
 3. Choose only the named main speaking characters the story needs; one historical lead plus an off-screen Narrator is the default in this repository. Every designed main character must speak in the plan. The Narrator needs no character image prompt; silent participants and crowds need no profile. Give each main speaker a fixed written design, while marking unsupported traits as reconstruction.
 4. Write a unique lowercase hyphenated frontmatter `name` matching the skill folder and a description that names the fixed story and output. Make the lesson topic-locked: students may revise pacing, framing, or tone, but cannot switch its event or silently replace its twelve beats.
 5. Write the student workflow and copy-ready prompt architecture below into the generated skill, replacing generic labels with actual character names, historical beats, and safeguards. Keep the generated file focused; add extra files only when the topic needs them.
@@ -44,7 +44,7 @@ Recognize `START`, `NEXT`, `RETRY`, `HELP`, `SKIP IMAGE`, and the English/Malay 
 
 After a Bahasa Melayu choice, the Stage 1 reply must still begin in English, for example: `Dialogue language: Bahasa Melayu. Here is the 12-scene plan.` Continue with English prose and the exact English headings `Frames 1–4`, `Frame 1 —`, and `Historical fact:`; never translate them to `Kumpulan`, `Bingkai`, or `Fakta Sejarah`. Only the spoken text in `Dialogue:` may be Malay. Do not repeat or translate the welcome message.
 
-In Stage 1, show each frame's factual anchor, depictable action, still-image composition, speaker or cast, dialogue or silence, period environment, and continuity. Keep a consistent internal world description for repeated locations: layout, fixed landmarks and props, light, weather, era, and camera geography. The twelve approved beats remain in order throughout the three prompts.
+In Stage 1, open with a short English `Story arc:` stating the protagonist's goal, what stands in the way, how the stakes rise, and where the story ends. Show each frame's factual anchor, depictable action, still-image composition, speaker or cast, dialogue or silence, period environment, and `Continuity:`. For each frame, `Continuity:` must name what consequence or unresolved goal arrives from the previous frame and what change leads to the next; a shared costume or location alone is insufficient. Read all twelve frames in order and fix any jump that feels like an unrelated fact. When history does not support direct causation, connect beats through the protagonist's continuing goal or visible consequence without inventing a historical event. Keep a consistent internal world description for repeated locations: layout, fixed landmarks and props, light, weather, era, and camera geography. The twelve approved beats remain in order throughout the three prompts.
 
 In Stage 2, give each main speaker:
 
@@ -56,7 +56,9 @@ In Stage 2.5, accept one final approved image per main speaker or an explicit `S
 
 ### Copy-ready storyboard format
 
-Each final prompt is one Markdown `text` fence. Its first line is exactly `Create a storyboard based on the panels below:`. Fill every panel from its approved global frame, with a title, `Dialogue:` and `Description:`. Descriptions cover one still moment, period setting, composition, action, and reactions. Refer to people by **name and action**; keep their physical appearance and wardrobe in the closing character lock.
+Each final prompt is one Markdown `text` fence. Its first line is exactly `Create a storyboard based on the panels below:`. Fill every panel from its approved global frame, with a title, `Dialogue:` and `Description:`. Descriptions cover one still moment, period setting, composition, action, and reactions. Make the four panels a mini-arc: setup, response, escalation, and result. Each panel must show the effect of the preceding panel or the continuing goal, and Panel 4 must lead into the next group or complete the story. Refer to people by **name and action**; keep their physical appearance and wardrobe in the closing character lock.
+
+After Panel 4 and before the grid instructions, include `STORY THROUGHLINE:` with the **actual story-specific** goal and the links among these four panels, including the bridge from the previous group and to the next when applicable. Keep it in English and do not invent historical causation.
 
 Inside every copy-ready prompt, include this explicit output contract after the four panels:
 
@@ -70,7 +72,7 @@ GRID LAYOUT INSTRUCTIONS:
 - Separate adjacent panels with thin visible borders or dividers.
 - Display each panel's number (1, 2, 3, 4) clearly in its upper-left corner.
 - Keep each panel's scene and text inside its own border. Put character dialogue in a speech balloon and Narrator dialogue in a caption box; reproduce only the assigned Dialogue text. Silent panels have no dialogue text.
-- Do not print panel titles, descriptions, layout instructions, or style notes in the image.
+- Do not print panel titles, descriptions, story-throughline notes, layout instructions, or style notes in the image.
 ```
 
 Close every prompt with a self-contained `STYLE CONSISTENCY:` section containing:
@@ -84,4 +86,4 @@ Close every prompt with a self-contained `STYLE CONSISTENCY:` section containing
 
 ## Check the generated skill
 
-Before finishing, confirm its frontmatter matches its folder; the fixed topic and twelve beats have suitable sources; the first student step asks for English or Bahasa Melayu dialogue; every line outside spoken `Dialogue:` remains English even after a Malay choice; the student workflow includes the image-or-skip decision and lock approval; Prompt B examples contain exactly 100 words; all sample spoken lines have six or seven words in the chosen language; and each of the three storyboard prompts requests one numbered 2×2 image with four equal panels and thin dividers. Check that the generated skill is text-only, self-contained, uses character names rather than image filenames, and does not contain facts or names accidentally copied from another story.
+Before finishing, confirm its frontmatter matches its folder; the fixed topic and twelve beats have suitable sources and one connected story arc; every frame's consequence leads to the next without fabricated facts; each four-panel prompt carries that arc across group boundaries; the first student step asks for English or Bahasa Melayu dialogue; every line outside spoken `Dialogue:` remains English even after a Malay choice; the student workflow includes the image-or-skip decision and lock approval; Prompt B examples contain exactly 100 words; all sample spoken lines have six or seven words in the chosen language; and each of the three storyboard prompts requests one numbered 2×2 image with four equal panels and thin dividers. Check that the generated skill is text-only, self-contained, uses character names rather than image filenames, and does not contain facts or names accidentally copied from another story.
