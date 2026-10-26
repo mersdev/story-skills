@@ -101,7 +101,7 @@ After the student approves the 12-frame plan, output the character information a
 ### Prompt A — Character image (written text only)
 
 ```text
-A full-body 3D animated character in a vibrant Pixar and Disney-inspired style representing Sultan Mahmud Shah, the adult Malay ruler of Melaka around 1511. He has warm brown eyes, defined dark brows, neatly kept dark hair beneath modest Malay court headwear, and a composed face with a restrained, confident smile. He wears an ivory woven court tunic with a deep burgundy waist sash, subtle gold trim, and restrained period-plausible accessories. Show his hands and feet in a dignified but relaxed stance. Use expressive, consistent facial proportions, rich woven fabric textures, vivid historically plausible colors, professional soft studio lighting, and a clean seamless off-white background. One character only; no throne, fort, battle, other people, text, logo, or watermark. His likeness and costume details are artistic reconstruction, not a documented portrait.
+A full-body 3D animated fictionalized adult Malay ruler of Melaka around 1511, in a vibrant Pixar and Disney-inspired style. He has warm brown eyes, defined dark brows, neatly kept dark hair beneath modest Malay court headwear, and a composed face with a restrained, confident smile. He wears an ivory woven court tunic with a deep burgundy waist sash, subtle gold trim, and restrained period-plausible accessories. Show his hands and feet in a dignified but relaxed stance. Use expressive, consistent facial proportions, rich woven fabric textures, vivid historically plausible colors, professional soft studio lighting, and a clean seamless off-white background. One character only; no throne, fort, battle, other people, text, logo, or watermark. His appearance and costume are artistic reconstruction, not a request for a real person's likeness.
 ```
 
 ### Prompt B — Personality and speaking (written text only)
@@ -114,33 +114,33 @@ Ask whether the student wants to modify either prompt or any character design tr
 
 ## Step 2.5 — Character image upload and identity lock
 
-Request one final clean-background image for Sultan Mahmud Shah or an explicit `SKIP IMAGE`. Never generate media. If the final image was already supplied, reuse it; do not demand another upload. Inspect any uploaded image read-only and describe only visible face, hair, build, clothing, colors, accessories, and style. Resolve differences between the image and Prompt A with the student. If `SKIP IMAGE` is chosen, use the approved Prompt A as the text-only reference. Show a short character reference lock summary identifying the approved image by character name if one exists, or the text-only fallback, plus the exact appearance invariants. Ask for explicit approval of this lock. Do not claim a nonexistent filename or Flow attachment. Only after lock approval deliver Storyboard I.
+Request one final clean-background image for Sultan Mahmud Shah or an explicit `SKIP IMAGE`. Never generate media. If the final image was already supplied, reuse it; do not demand another upload. Inspect any uploaded image read-only and describe only visible face, hair, build, clothing, colors, accessories, and style. Resolve differences between the image and Prompt A with the student. If `SKIP IMAGE` is chosen, use the approved Prompt A as the text-only reference. Show a short character reference lock summary identifying the approved image by character name if one exists, or the text-only fallback, plus the exact appearance invariants. Record each fixed accessory, including headwear, glasses if present, jewelry, or a carried item, with its color, shape, and placement; keep scene props separate. Ask for explicit approval of this lock. Do not claim a nonexistent filename or Flow attachment. Only after lock approval deliver Storyboard I.
 
 ## Stages 3–5 — Storyboard image prompts
 
-Produce exactly one current group per reply, in a single Markdown `text` fence. Its first line must be exactly `Create a storyboard based on the panels below:`. Use **local** Panel 1–4 labels even for later groups. Each panel corresponds to one locked global frame. Include no extra panel or story beat. Each description must portray one still panel in the same **16:9 landscape 2×2 storyboard IMAGE**, with action, period setting, lighting, composition, and continuity. Refer to people by name and action in descriptions; put physical appearance and wardrobe in the character lock. Choose Sultan Mahmud Shah or Narrator for each finished Dialogue field; never leave a placeholder. Show Sultan Mahmud Shah in at least one panel per four-panel group and give him at least one spoken line in the story.
+Produce exactly one current group per reply, in a single Markdown `text` fence. Its first line must be exactly `Create a storyboard based on the panels below:`. Use **local** Panel 1–4 labels even for later groups. Each panel corresponds to one locked global frame. Include no extra panel or story beat. Each description must portray one still panel in the same **16:9 landscape 2×2 storyboard IMAGE**, with action, period setting, lighting, composition, and continuity. Before the fence, tell the student `Lead Character = Sultan Mahmud Shah` and to copy only the fence. Inside the fence, use `Lead Character` for him in descriptions, speaker labels, titles, throughline, and style lock; identify other real people by role. Keep all real people's names out of the copyable prompt, including spoken words. Put physical appearance and wardrobe in the character lock. Choose Lead Character or Narrator for each finished Dialogue field; never leave a placeholder. Show Lead Character in at least one panel per four-panel group and give him at least one spoken line in the story.
 
 Make each four-panel image a mini-arc: setup, response, escalation, and result. Panel 1 picks up the previous group's consequence when applicable; each later panel shows what changed; Panel 4 leads into the next group or resolves the aftermath. Keep the conflict and its human stakes visible without inventing tactics or dialogue as historical fact.
 
-In the copy-ready storyboard, identify an approved uploaded image only by the character name, `Sultan Mahmud Shah's approved character reference`. Never include an upload filename (such as `image_161d23.jpg`), extension, path, or asset ID anywhere in the prompt. The student supplies the image separately to Gemini/Flow.
+In the copy-ready storyboard, call an approved image `Lead Character's approved character reference`. Never include an upload filename (such as `image_161d23.jpg`), extension, path, or asset ID anywhere in the prompt. The student supplies the image separately to Gemini/Flow.
 
 ```text
 Create a storyboard based on the panels below:
 
 Panel 1: [title of current global frame]
-Dialogue: {Sultan Mahmud Shah or Narrator}: "[6 or 7 spoken words in the chosen language]"
+Dialogue: {Lead Character or Narrator}: "[6 or 7 spoken words in the chosen language]"
 Description: [one still-image panel in the 2×2 grid, filmable action and reconstruction boundary]
 
 Panel 2: [title of next global frame]
-Dialogue: {Sultan Mahmud Shah or Narrator}: "[6 or 7 spoken words in the chosen language]"
+Dialogue: {Lead Character or Narrator}: "[6 or 7 spoken words in the chosen language]"
 Description: [one still-image panel in the 2×2 grid]
 
 Panel 3: [title of next global frame]
-Dialogue: {Sultan Mahmud Shah or Narrator}: "[6 or 7 spoken words in the chosen language]"
+Dialogue: {Lead Character or Narrator}: "[6 or 7 spoken words in the chosen language]"
 Description: [one still-image panel in the 2×2 grid]
 
 Panel 4: [title of next global frame]
-Dialogue: {Sultan Mahmud Shah or Narrator}: "[6 or 7 spoken words in the chosen language]"
+Dialogue: {Lead Character or Narrator}: "[6 or 7 spoken words in the chosen language]"
 Description: [one still-image panel in the 2×2 grid]
 
 STORY THROUGHLINE: [State what is at stake and the actual links among these four panels, including the bridge from the previous group and to the next when applicable; do not invent historical events.]
@@ -160,7 +160,7 @@ STYLE CONSISTENCY:
 VISUAL STYLE & IMAGE: Cinematic 3D Disney/Pixar-style family animation; one 16:9 landscape image with four equal 2×2 panels; era-appropriate palette, materials, and composition.
 ENVIRONMENT LOCK: [Self-contained layout, landmarks, materials, light, weather, time and prop positions for every location in this group; repeat details rather than saying "same as before".]
 CHARACTER REFERENCE LOCK:
-[Use Sultan Mahmud Shah's approved character reference if supplied, or approved Prompt A as the explicit text-only fallback. Refer to the image by character name, never by filename. Restate his approved eye color, brows, face, hair, headwear, garment colors and textures, accessories, and style; do not invent details hidden in an uploaded image. Keep him visibly identical across all groups; never invent an image reference.]
+[Use Lead Character's approved character reference if supplied, or approved Prompt A as the explicit text-only fallback. Restate his approved eyes, brows, face, hair, modest court headwear, ivory woven tunic, deep burgundy sash, subtle gold trim, and any approved restrained accessories with their colors, shapes, textures, and placement. Include glasses or any other accessory only if approved in the lock. Do not invent details hidden in an uploaded image or turn a scene prop into a fixed accessory. Keep him visibly identical across all groups; never invent an image reference.]
 IMAGE GENERATOR USAGE: [The student copies this text into an image generator and manually attaches the approved character image if available. Do not claim it is already attached.]
 ```
 
