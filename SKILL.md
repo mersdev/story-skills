@@ -1,6 +1,6 @@
 ---
 name: story-skills
-description: Create or update a self-contained, topic-locked classroom skill that guides students from a researched 12-scene history plan to character prompts and three text-only Google Flow or Gemini storyboards. Use when building a specialized storyboard skill, not when running one with students.
+description: Create or update a self-contained, topic-locked classroom skill that guides students from a researched 12-scene history plan to character prompts and three text-only prompts for 2×2 storyboard images. Use when building a specialized storyboard skill, not when running one with students.
 ---
 
 # Classroom Storyboard Skill Builder
@@ -22,8 +22,8 @@ The generated `SKILL.md` must work on its own. Include its complete topic, twelv
 ### Text-only production contract
 
 - The assistant writes prompts and may inspect user-uploaded images read-only. It never generates, edits, renders, previews, uploads, delegates, or sends image, audio, animation, or video media. `Create a storyboard based on the panels below:` is text for the student to copy, not an instruction for the assistant to execute.
-- Plan **twelve** chronological frames, grouped 1–4, 5–8, and 9–12. Each frame is an **individual 16:9 landscape video** scene; a four-panel prompt does not request a combined grid, still image, or vertical video.
-- Deliver **three standalone four-panel prompts**, one per assistant reply. Use local `Panel 1`–`Panel 4` labels in every prompt and keep each prompt usable without the preceding ones.
+- Plan **twelve** chronological frames, grouped 1–4, 5–8, and 9–12. Each group becomes **one landscape 16:9 storyboard image** with four equal panels in a 2×2 grid.
+- Deliver **three standalone four-panel image prompts**, one per assistant reply. Use local `Panel 1`–`Panel 4` labels in every prompt and keep each prompt usable without the preceding ones.
 - The dialogue-language choice changes **only spoken words inside `Dialogue:`**, including off-screen Narrator speech. It does not change the response or prompt language. Keep introductions, story and frame titles, headings, field labels, factual notes, scene descriptions, character prompts, style locks, and next-step instructions in English—even after the student chooses Bahasa Melayu. Never translate the fixed English title or labels such as `Historical fact:` and `Panel 1:`.
 - Every non-silent `Dialogue:` line has **six or seven space-separated words** in the chosen English or Bahasa Melayu. Count spoken words, excluding the speaker label. A silent panel uses `Dialogue: None (silent panel)`. Preserve authentic quotations; if their wording conflicts with the count, describe the quotation as action and use a compliant Narrator line rather than altering it.
 - Attribute invented historical speech to reenactment, not to a verified quotation. Respect the user's protected dialogue and the topic's historical boundaries.
@@ -44,7 +44,7 @@ Recognize `START`, `NEXT`, `RETRY`, `HELP`, `SKIP IMAGE`, and the English/Malay 
 
 After a Bahasa Melayu choice, the Stage 1 reply must still begin in English, for example: `Dialogue language: Bahasa Melayu. Here is the 12-scene plan.` Continue with English prose and the exact English headings `Frames 1–4`, `Frame 1 —`, and `Historical fact:`; never translate them to `Kumpulan`, `Bingkai`, or `Fakta Sejarah`. Only the spoken text in `Dialogue:` may be Malay. Do not repeat or translate the welcome message.
 
-In Stage 1, show each frame's factual anchor, filmable action, shot, speaker or cast, dialogue or silence, period environment, and continuity. Keep a consistent internal world description for repeated locations: layout, fixed landmarks and props, light, weather, era, and camera geography. The twelve approved beats remain in order throughout the three prompts.
+In Stage 1, show each frame's factual anchor, depictable action, still-image composition, speaker or cast, dialogue or silence, period environment, and continuity. Keep a consistent internal world description for repeated locations: layout, fixed landmarks and props, light, weather, era, and camera geography. The twelve approved beats remain in order throughout the three prompts.
 
 In Stage 2, give each main speaker:
 
@@ -56,17 +56,32 @@ In Stage 2.5, accept one final approved image per main speaker or an explicit `S
 
 ### Copy-ready storyboard format
 
-Each final prompt is one Markdown `text` fence. Its first line is exactly `Create a storyboard based on the panels below:`. Fill every panel from its approved global frame, with a title, `Dialogue:` and `Description:`. Descriptions cover the individual video scene, period setting, camera, action, and reactions. Refer to people by **name and action**; keep their physical appearance and wardrobe in the closing character lock.
+Each final prompt is one Markdown `text` fence. Its first line is exactly `Create a storyboard based on the panels below:`. Fill every panel from its approved global frame, with a title, `Dialogue:` and `Description:`. Descriptions cover one still moment, period setting, composition, action, and reactions. Refer to people by **name and action**; keep their physical appearance and wardrobe in the closing character lock.
+
+Inside every copy-ready prompt, include this explicit output contract after the four panels:
+
+```text
+GRID LAYOUT INSTRUCTIONS:
+- Generate exactly ONE 16:9 landscape storyboard IMAGE, not four separate images or a video.
+- Divide the image into a 2×2 grid of four equal panels.
+- Row 1: Panel 1 | Panel 2
+- Row 2: Panel 3 | Panel 4
+- Read left to right, then top to bottom; do not use a 1×4 strip.
+- Separate adjacent panels with thin visible borders or dividers.
+- Display each panel's number (1, 2, 3, 4) clearly in its upper-left corner.
+- Keep each panel's scene and text inside its own border. Put character dialogue in a speech balloon and Narrator dialogue in a caption box; reproduce only the assigned Dialogue text. Silent panels have no dialogue text.
+- Do not print panel titles, descriptions, layout instructions, or style notes in the image.
+```
 
 Close every prompt with a self-contained `STYLE CONSISTENCY:` section containing:
 
-- `VISUAL STYLE & VIDEO:` the approved style and four separate 16:9 landscape video scenes.
+- `VISUAL STYLE & IMAGE:` the approved style and one 16:9 landscape image containing the four 2×2 panels.
 - `ENVIRONMENT LOCK:` detailed layout, landmarks, materials, props, light, era, weather, and time for every location used in that group. Repeat required details across prompts; never rely on “same as before.”
 - `CHARACTER REFERENCE LOCK:` each relevant named character's approved visual invariants. If an image was approved, call it only **`[Character name]'s approved character reference`** and use visible details plus agreed text details for anything hidden. If `SKIP IMAGE` was chosen, explicitly name Prompt A as the text-only reference. Do not redesign or swap identities.
-- `GOOGLE FLOW USAGE:` tell the student to attach the approved image manually to Gemini/Flow when available; do not claim it is already attached.
+- `IMAGE GENERATOR USAGE:` tell the student to attach the approved character image manually to the image generator when available; do not claim it is already attached.
 
 **Never put an uploaded image filename, extension, path, generated image ID, or unconfirmed asset handle anywhere in the copy-ready storyboard prompt.** The image is supplied separately; the prompt refers to it by character name. Apply this rule to every panel and the entire `STYLE CONSISTENCY:` section.
 
 ## Check the generated skill
 
-Before finishing, confirm its frontmatter matches its folder; the fixed topic and twelve beats have suitable sources; the first student step asks for English or Bahasa Melayu dialogue; every line outside spoken `Dialogue:` remains English even after a Malay choice; the student workflow includes the image-or-skip decision and lock approval; Prompt B examples contain exactly 100 words; all sample spoken lines have six or seven words in the chosen language; and the three storyboard groups have four local panels each. Check that the generated skill is text-only, self-contained, uses character names rather than image filenames, and does not contain facts or names accidentally copied from another story.
+Before finishing, confirm its frontmatter matches its folder; the fixed topic and twelve beats have suitable sources; the first student step asks for English or Bahasa Melayu dialogue; every line outside spoken `Dialogue:` remains English even after a Malay choice; the student workflow includes the image-or-skip decision and lock approval; Prompt B examples contain exactly 100 words; all sample spoken lines have six or seven words in the chosen language; and each of the three storyboard prompts requests one numbered 2×2 image with four equal panels and thin dividers. Check that the generated skill is text-only, self-contained, uses character names rather than image filenames, and does not contain facts or names accidentally copied from another story.
