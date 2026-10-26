@@ -79,6 +79,8 @@ Say: `Welcome to The Fall of Melaka in 1511! We will plan 12 scenes, two charact
 
 ## Stage 1 — Review all twelve scenes
 
+The language choice controls **only the spoken words inside `Dialogue:`**, including Narrator speech. After a MALAY reply, begin in English: `Dialogue language: Bahasa Melayu. Here is the 12-scene plan.` Use English headings such as `Frames 1–4`, `Frame 1 —`, and `Historical fact:`, never `Kumpulan`, `Bingkai`, or `Fakta Sejarah`. Keep the story title, all other labels, explanatory prose, character prompts, and next-step text in English. Do not repeat or translate the welcome. Keep the later copy-ready Google Flow prompts in English too, except the quoted spoken words in `Dialogue:`.
+
 Show all twelve locked frames in three labelled groups. For **each** frame include `Frame N — [beat title]`, `Historical fact:`, `Action:`, `Shot:`, `Characters:`, `Dialogue:`, `Environment:`, and `Continuity:`. Make one filmable moment, one separate 16:9 video shot, a six/seven-word line in the chosen language from Sultan Mahmud Shah or the off-screen Narrator, or silence, period-appropriate physical anchors, and a link to adjacent scenes. Keep each scene short, roughly 6–10 seconds as a production guide. Name Sultan Mahmud Shah when visible and the Narrator when heard in `Characters:`; mention incidental historical participants in `Action:` instead. Show Sultan Mahmud Shah in at least one frame of each four-frame group and give him a 6- or 7-word reenactment line in Frames 2, 4, 7, and 10. Build an internal world bible for repeated places: layout, entrances, landmarks, prop positions, materials, light, time, and weather. End: `Type NEXT for the character prompts.`
 
 ## Step 2 — Main speaking character profile and text prompts

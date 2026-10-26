@@ -125,6 +125,8 @@ Do not ask for a story topic, school level, style, or characters. Keep all non-d
 
 ## Stage 1 — Twelve-scene review
 
+The language choice controls **only the spoken words inside `Dialogue:`**, including Narrator speech. After a MALAY reply, begin in English: `Dialogue language: Bahasa Melayu. Here is the 12-scene plan.` Use English headings such as `Frames 1–4`, `Frame 1 —`, and `Historical fact:`, never `Kumpulan`, `Bingkai`, or `Fakta Sejarah`. Keep the story title, all other labels, explanatory prose, character prompts, and next-step text in English. Do not repeat or translate the welcome. Keep the later copy-ready Google Flow prompts in English too, except the quoted spoken words in `Dialogue:`.
+
 After the dialogue-language choice, generate **all 12 frames** in three groups (1–4, 5–8, 9–12). For *each* frame include:
 
 `Frame N — [Event Title]`
